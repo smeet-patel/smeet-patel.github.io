@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Web</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</style>
+</head>
+<body>
+
+<div class="nav1" id="mynav1">
+  <a href="index.html" class="active"><img src="spw1.png" height="40"></a>
+  <a href="mycon.html">CONTACT</a>
+  <a href="myblog.html">BLOG</a>
+  <a href="mywork.html">MY WORK</a>
+  <a href="aboutme.html">ABOUT ME</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="menubutton" onclick="myFunction()">&#9776;</a>
+</div>
+
+
+<div class="bannerContainer">
+<img src="p41.jpg" alt="Skyline" style="width:100%" class="responsiveImg">
+<div class="bottom-left"><p><b>MY WORK</b></p></div>
+</div>
+
+<div class="rowBlog">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Dec 7, 2017</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Sep 2, 2017</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+  </div>
+ <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <div class="fakeimg" style="height:100px;">Image</div>
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg">Image</div><br>
+      <div class="fakeimg">Image</div><br>
+      <div class="fakeimg">Image</div>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>Some text..</p>
+    </div>
+  </div>
+</div>
+
+
+<footer class="footer">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <div class="container text-center">
+    <a href="https://www.linkedin.com/in/smeet-patel-/"><i class="fa fa-linkedin-square"></i></a>
+    <a href="https://github.com/smeet-patel"><i class="fa fa-github"></i></a>
+    <a href="mailto:smeetprpatel@gmail.com?Subject=Mail%20from%20Website" target="_top"><i class="fa fa-envelope"></i></a>
+    <a href="https://goo.gl/maps/fReyXVpdCDB2"><i class="fa fa-map-marker"></i></a>
+  </div>
+</footer>
+
+<script>
+var w = window.innerWidth
+|| document.documentElement.clientWidth
+|| document.body.clientWidth;
+
+var h = window.innerHeight
+|| document.documentElement.clientHeight
+|| document.body.clientHeight;
+
+var x = document.getElementById("demo");
+x.innerHTML = "Browser inner window width: " + w + ", height: " + h + ".";
+</script>
+<script>
+function myFunction() {
+    var x = document.getElementById("mynav1");
+    if (x.className === "nav1") {
+        x.className += " responsive";
+    } else {
+        x.className = "nav1";
+    }
+}
+</script>
+
+</body>
+</html>

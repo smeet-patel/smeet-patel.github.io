@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Web</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+<!-- Need to add my mini icon ------------------------------>
+	<link rel="icon" href="http://example.com/favicon.png"> 
+</style>
+</head>
+<body>
+
+<!---------------------------------------------------------->
+<!-- Nav Bar ----------------------------------------------->
+
+	<div class="nav1" id="mynav1">
+<!--Adding My logo to the left and always showing -->
+	  <a href="index.html" class="active"><img src="spw1.png" height="40"></a>
+<!--Floating to the Left Side of the menu, the other pages-->
+	  <a href="mycon.html">CONTACT</a>
+	  <a href="myblog.html">BLOG</a>
+	  <a href="mywork.html">MY WORK</a>
+	  <a href="aboutme.html">ABOUT ME</a>
+<!--Shows menubutton when screen is small -->
+	  <a href="javascript:void(0);" style="font-size:15px;" class="menubutton" onclick="myFunction()">&#9776;</a>
+	</div>
+
+<!---------------------------------------------------------->
+<!-- Index Page Banner ------------------------------------->	
+<img src="smeet1.png" alt="Smeet" style="width:100%">
+<!--<div class="bannerContainer">
+<img src="me1.jpg" alt="Smeet" style="width:100%" class="me1">
+<div class="top-right"><font size="60px">Hello!</font><br>
+<font size="6px">I’m <b><em>Smeet Patel</em></b></font><br>
+<pre><i>A Master of Software Development student
+at Victoria University of Wellington<i></pre></div>
+<div class="top-left"> 
+<img src="sp1.png" height="180px">
+<p>Work that produces a <b><em>smile</em></b></p>-->
+
+<!---------------------------------------------------------->
+<!-- Footer with Icons ------------------------------------->
+<footer class="footer">
+<!-- Enable and imports the icons in the banner -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
+	<div class="container text-center">
+		<a href="https://www.linkedin.com/in/smeet-patel-/"><i class="fa fa-linkedin-square"></i></a>
+		<a href="https://github.com/smeet-patel"><i class="fa fa-github"></i></a>
+		<a href="mailto:smeetprpatel@gmail.com?Subject=Mail%20from%20Website" target="_top"><i class="fa fa-envelope"></i></a>
+		<a href="https://goo.gl/maps/fReyXVpdCDB2"><i class="fa fa-map-marker"></i></a>
+	</div>
+</footer>
+
+<!--The Magic Code using Javascript which allows the meun button
+to appear and enabling the nav bar to be responsive -->
+<script>
+function myFunction() {
+    var x = document.getElementById("mynav1");
+    if (x.className === "nav1") {
+        x.className += " responsive";
+    } else {
+        x.className = "nav1";
+    }
+}
+</script>
+
+</body>
+</html>
