@@ -6,7 +6,7 @@ body{
 html, body {
 	margin:0 ;
 	padding: 0;
-	background: #f1f1f1;
+	background: white;
 	min-width: 100%;
 	min-height: 100%;
 	/* If white boxes are made, an off tone will show the box */
@@ -19,19 +19,18 @@ html, body {
 }
 
 .biggerfont{
-	/*font-size:2vw;*/
+	font-size:120%;
 	white-space: pre-wrap;
 	line-height: 1.6;
 }
 
 .intro{
 	line-height: 30%;
-	font-size:3vw;
+	font-size:150%;
 }
 
 .biggerfont1{
-	line-height: 50%;
-/*	font-size:1.8vw;*/
+	font-size:120%;
 }
 
 .cont{
@@ -154,7 +153,10 @@ footer a:hover {
 
 
 /* +++++++++++++ INDEX PAGE CSS +++++++++++++ */
-
+.centerWrap{
+	width:80%;
+	margin:auto;
+}
 
 /* Create two unequal columns that floats next to each other */
 /* Left column */
@@ -286,17 +288,21 @@ margin:20px;
 @media (min-width: 1465px) {.bottom-left {bottom: -23.5%;}
 
 
+/* =============== Tile grid CODE ===============*/
+/**changed from my web gallery**/
 .row {
     display: flex;
     flex-wrap: wrap;
     padding: 0 4px;
 }
-
-/* Create four equal columns that sits next to each other */
+/* Create two equal columns that sits next to each other */
 .column {
-    flex: 24%;
-    max-width: 24%;
+    flex: 49%;
+    max-width: 49%;
     padding: 0 4px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .column img {
@@ -304,18 +310,72 @@ margin:20px;
     vertical-align: middle;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-    .column {
-        flex: 50%;
-        max-width: 50%;
-    }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+/* Responsive layout - makes the single columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
     .column {
         flex: 99%;
         max-width: 99%;
     }
+}
+/* ------------ Tile grid CODE ENDS ------------ */
+
+.hoverOverImage * {
+	box-sizing: border-box;
+}
+.hoverOverImage {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	max-width: 100%;
+	height: auto;
+}
+.hoverOverImage img {
+	max-width: 100%;
+}
+.hoverOverImage .hoverOverImage-layer_bottom {
+	display: block;
+}
+.hoverOverImage .hoverOverImage-layer_top {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	padding: 15px;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-ms-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+.hoverOverImage:hover .hoverOverImage-layer_top,
+.hoverOverImage.active .hoverOverImage-layer_top {
+	opacity: 1;
+}
+.hoverOverImage .hoverOverImage-text {
+	text-align: center;
+	font-size: 120%;
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.hoverOverImage .hoverOverImage-text_mobile {
+	font-size: 15px;
+	border-top: 1px solid rgb(179, 179, 179); /* for old browsers */
+	border-top: 1px solid rgba(179, 179, 179, 0.7);
+	margin-top: 5px;
+	padding-top: 2px;
+	display: none;
+}
+.hoverOverImage.active .hoverOverImage-text_mobile {
+	display: block;
 }
