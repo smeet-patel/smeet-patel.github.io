@@ -13,17 +13,32 @@ html, body {
 	/*background: #f1f1f1;*/
 }
 
-.intro, .biggerfont{
+.intro, .biggerfont, .biggerfont1{
     text-align: center;
 	color: #0F78C3;
 }
 
 .biggerfont{
-	font-size:1.5vw;
+	font-size:2vw;
+	white-space: pre-wrap;
+	line-height: 1.6;
 }
 
 .intro{
+	line-height: 30%;
 	font-size:3vw;
+}
+
+.biggerfont1{
+	line-height: 50%;
+	font-size:1.8vw;
+}
+
+.cont{
+	width:90%;
+	margin:auto ;
+	padding: 0;
+	
 }
 
 /* =============== NAV BAR CODE ===============*/
