@@ -19,7 +19,7 @@ html, body {
 }
 
 .biggerfont{
-	font-size:2vw;
+	/*font-size:2vw;*/
 	white-space: pre-wrap;
 	line-height: 1.6;
 }
@@ -31,7 +31,7 @@ html, body {
 
 .biggerfont1{
 	line-height: 50%;
-	font-size:1.8vw;
+/*	font-size:1.8vw;*/
 }
 
 .cont{
