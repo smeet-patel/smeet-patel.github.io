@@ -156,6 +156,9 @@ footer a:hover {
 .centerWrap{
 	width:80%;
 	margin:auto;
+	font-size:18px;
+	color: #0F78C3;
+	margin: auto;
 }
 
 /* Create two unequal columns that floats next to each other */
@@ -272,13 +275,6 @@ margin:20px;
 	color:white;
 }
 
-.cenabout1 {
-	font-size:20px;
-	color: #0F78C3;
-	margin: auto;
-    width: 88%;
-}
-
 @media (min-width: 1060px) {.bottom-left {bottom: -18%;}
 @media (min-width: 1135px) {.bottom-left {bottom: -19%;}
 @media (min-width: 1235px) {.bottom-left {bottom: -20%;}
@@ -378,4 +374,27 @@ margin:20px;
 }
 .hoverOverImage.active .hoverOverImage-text_mobile {
 	display: block;
+}
+
+able{
+	width:100%;
+	border:none;
+	padding:2px;
+	margin:2px;
+}
+#tabmm{
+	width:100%;
+	color:white;
+	border:1px solid #f5f5f5;
+}
+#tabmm, th {
+    background-color: white;
+    color: #4282D7;
+	padding: 10px;
+	margin:auto;
+}
+#tabmm, td{
+	background-color: white;
+    color: #4282D7;
+	margin:40px;
 }
