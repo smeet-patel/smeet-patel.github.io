@@ -177,13 +177,16 @@ margin:20px;
 	padding:10px;
 }
 hr {
-    display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid #0F78C3;
+    border-top: 2px solid #0F78C3;
 	opacity:.5;
     margin: 1em 0;
     padding: 0; 
+}
+hr.s1 {
+	background-color: #fff;
+	border-top: 2px dashed #0F78C3;
 }
 
 .center { 
