@@ -373,26 +373,3 @@ video {
 .hoverOverImage.active .hoverOverImage-text_mobile {
 	display: block;
 }
-
-able{
-	width:100%;
-	border:none;
-	padding:2px;
-	margin:2px;
-}
-#tabmm{
-	width:100%;
-	color:white;
-	border:1px solid #f5f5f5;
-}
-#tabmm, th {
-    background-color: white;
-    color: #4282D7;
-	padding: 10px;
-	margin:auto;
-}
-#tabmm, td{
-	background-color: white;
-    color: #4282D7;
-	margin:40px;
-}
