@@ -35,10 +35,38 @@ programming projects in my spare time. </p>
 <p>When I am not studying, you will find me reading about new technologies or the current affairs, exploring new places (hiking and travelling), watching such as the Grand Tour, The Block NZ, Grand Designs or more often working on a project. Having a creative minded person, I always thinking about new ways to improve things, to build solutions for issues. I believe that to predict the future; you have to create the future or very much be part of the forefront of changing technology and being innovative.</p>
 <p>Currently, I am Working on updating and adding past projects to the website, enhancing the user experience. Along with the site, am learning Android Studio and looking to convert java application to Android apps. I am also planning to make a native application for construction projects, to improve communication between key stakeholders.</p>
 
+<!--enable for the flex tiles row and col--->
+		<div class="row"> 
+		  <div class="column">
+		  <br>
+		  <!--container consist the image and text to display center
+		  when full screen---------------------------------------->
+			<div class="hoverOverImage">
+				<img src="me2.jpg" alt="Webapp" class="hoverOverImage-layer_bottom">
+				<!--<a href="aboutme.html">--><div class="hoverOverImage-layer_top">
+					<div class="hoverOverImage-text">At Belmont Trig, December 2017</div>
+				</div></a>
+			</div>
+<br><br>
+			
+		</div>
+			<!--second col-------------->
+		<div class="column">
+		<br>
+			<div class="hoverOverImage">
+				<img src="web1.png" alt="Native App" class="hoverOverImage-layer_bottom">
+				<div class="hoverOverImage-layer_top">
+					<div class="hoverOverImage-text">Developing my website</div>
+				</div>
+			</div>
+<br><br>
+	</div> 
+	</div>
 </div>
 
-<h2>My Experience and Skills</h2>
-<h2>WORK Experience</h2>
+
+<h2 class="w">My Experience and Skills</h2>
+<h2 class="w">WORK Experience</h2>
 <h4>Information Systems Tutor</h4>
 <p>July 2017 - July 2018</p>
 <h5>Victoria University of Wellington</h5>
@@ -47,6 +75,8 @@ programming projects in my spare time. </p>
 <dd><li>Running a help desk targeted for Maori and Pacifica students </li></dd>
 <dd><li>Grading of assessment</li></dd>
 <dd><li>Content creatation such games for student learning and participation</li></dd>
+<br>
+<hr>
 <h4>S & S Patel Superette</h4>
 <p>I work at a family-owned grocery store located in the vibrant Wellington CBD. This experience has helped me understand the dynamics of retail business.
 </p>
@@ -56,38 +86,36 @@ programming projects in my spare time. </p>
 <dd><li>Checkout operator for all business functions (inclusive of Lotto, NZ post and Willis Dry Cleaning)</li></dd>
 <dd><li>Setting up and maintaining any technologies implemented, such as the POS and ordering system.</li></dd>
 <br>
-<h2>Other Experience</h2>
+<h2 class="w">Other Experience</h2>
 <li><b>ACCY 223 Class Representative (Class Rep)</b><br>
 My responsible as a Student Representative (Class Rep) for the course paper Management Accounting, was to facilitate in communication between students and lecturers, directing course feedback to the course Administrator/ Coordinator and assisting students with any concerns. 
 </li>
 <dd>Some of the additional responsibilities involved:</dd>
 <dd><li>Reporting back to the teaching staff about test performance and uncertainty or queries raised by the students.</li> </dd>
-<br>
+<hr>
 <li><b>INFO 141 Class Representative (Class Rep)</b><br>
 My responsible as a Student Representative (Class Rep) for course paper Systems Analysis (INFO 141), was to facilitate in communication between students and lecturers, directing course feedback to the course Administrator/ Coordinator and assisting students with any concerns. <br>
 <dd>Some of the additional responsibilities involved:</dd>
 <dd><li>Negotiation of the project date submission to be changed.</li> </dd>
 <dd><li>Requesting for clarification on assignment and the details for students. </li></dd>
 </li>
-<br>
+<hr>
+<li><b>Maori and Pacifica student’s helpdesk</b><br>
+Running the Maori and Pacifica students helpdesk for INFO 101 for the website project. Guiding or teaching students when assistance is required.</li>
+<hr>
+<li><b>South coast beach clean-up and McAllister Park Tree Planting</b><br>
+Cleaning our beaches (Owhiro Bay) [September] and planting trees
+</li>
+<hr>
+<li><b>Victoria International Leadership Programme 2016 - present</b><br>
+Participating in events and attending leadership / cultural seminars
+</li>
+<hr>
 <li><b>Cuba-Dupa (cultural and event Volunteer) 2018</b><br>
 Artist Minder for New Zealand School of Music (Orchestra) and was also offered the opportunity to conduct the first performace.
 </li>
 <br>
-<li><b>Maori and Pacifica student’s helpdesk</b><br>
-Running the Maori and Pacifica students helpdesk for INFO 101 for the website project. Guiding or teaching students when assistance is required.</li>
-<br>
-<li><b>South coast beach clean-up and McAllister Park Tree Planting</b><br>
-Cleaning our beaches (Owhiro Bay) [September] and planting trees
-</li>
-<br>
-<li><b>Victoria International Leadership Programme 2016 - present</b><br>
-Participating in events and attending leadership / cultural seminars
-</li>
-<br>
-<li><b>Victoria University Badminton Club</b></li>
-<br>
-<h2>Education </h2>
+<h2 class="w">Education </h2>
 <table>
 <tr>
 <td colspan="2"><h3>Victoria University of Wellington, New Zeland</h3></td>
@@ -122,6 +150,7 @@ Participating in events and attending leadership / cultural seminars
 </tr>
 </table>
 <br>
+<h2 class="w">Hobbies</h2>
 
 
 <div class="row"> 
@@ -169,3 +198,65 @@ Participating in events and attending leadership / cultural seminars
 </footer>
 </body>
 </html>
+<style>
+.hoverOverImage * {
+	box-sizing: border-box;
+}
+.hoverOverImage {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	max-width: 100%;
+	height: auto;
+}
+.hoverOverImage img {
+	max-width: 100%;
+}
+.hoverOverImage .hoverOverImage-layer_bottom {
+	display: block;
+}
+.hoverOverImage .hoverOverImage-layer_top {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	padding: 15px;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-ms-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+.hoverOverImage:hover .hoverOverImage-layer_top,
+.hoverOverImage.active .hoverOverImage-layer_top {
+	opacity: 1;
+}
+.hoverOverImage .hoverOverImage-text {
+	text-align: center;
+	font-size: 160%;
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.hoverOverImage .hoverOverImage-text_mobile {
+	font-size: 160%;
+	border-top: 1px solid rgb(179, 179, 179); /* for old browsers */
+	border-top: 1px solid rgba(179, 179, 179, 0.7);
+	margin-top: 5px;
+	padding-top: 2px;
+	display: none;
+}
+.hoverOverImage.active .hoverOverImage-text_mobile {
+	display: block;
+}
+</style>

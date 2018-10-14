@@ -168,39 +168,24 @@ margin:20px;
     float: left;
     width: 60%;
 }
-
-/* Right column */
-.rightcolumn {
-	margin:20px;
-    float: left;
-    width: 25%;
-    padding-left: 20px;
+.w{
+	color:white;
+	font-family: "Myriad Pro", sans-serif;
+	background-color: #0F78C3;
+	text-align:center;
+	font-style:italic;
+	padding:10px;
 }
-.rightcolumn {
-    float: left;
-    width: 30%;
-    padding-left: 20px;
-}
-
-/* Fake image */
-.fakeimg {
-    background-color: #aaa;
-    width: 100% -20px;
-	margin:20px;
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #0F78C3;
+	opacity:.5;
+    margin: 1em 0;
+    padding: 0; 
 }
 
-/* Add a card effect for articles */
-.card {
-     background-color: white;
-     padding: 20px;
-     margin-top: 20px;
-}
-/* Clear floats after the columns */
-.rowBlog:after {
-    content: "";
-    display: table;
-    clear: both;
-}
 .responsiveImg {
     width: 100%;
     height: auto;
