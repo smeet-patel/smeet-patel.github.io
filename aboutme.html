@@ -12,7 +12,7 @@
 <body>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <div class="nav1" id="mynav1">
-  <a href="index.html" class="active"><img src="spw1.png" height="40"></a>
+  <a href="index.html" class="active"><img src="spw1.png" height="40" id="conner_round"></a>
   <a href="mycon.html">CONTACT</a>
   <a href="myblog.html">BLOG</a>
   <a href="mywork.html">MY WORK</a>
@@ -42,7 +42,7 @@ programming projects in my spare time. </p>
 		  <!--container consist the image and text to display center
 		  when full screen---------------------------------------->
 			<div class="hoverOverImage">
-				<img src="me2.jpg" alt="Webapp" class="hoverOverImage-layer_bottom">
+				<img src="me2.jpg" alt="Webapp" class="hoverOverImage-layer_bottom" id="conner_round">
 				<!--<a href="aboutme.html">--><div class="hoverOverImage-layer_top">
 					<div class="hoverOverImage-text">At Belmont Trig, December 2017</div>
 				</div></a>
@@ -54,7 +54,7 @@ programming projects in my spare time. </p>
 		<div class="column">
 		<br>
 			<div class="hoverOverImage">
-				<img src="web1.png" alt="Native App" class="hoverOverImage-layer_bottom">
+				<img src="web1.png" alt="Native App" class="hoverOverImage-layer_bottom" id="conner_round">
 				<div class="hoverOverImage-layer_top">
 					<div class="hoverOverImage-text">Developing my website</div>
 				</div>
@@ -106,7 +106,7 @@ programming projects in my spare time. </p>
 		<div class="column">
 		<br>
 			<div class="hoverOverImage">
-				<img src="tut.png" alt="Tutorial slide" class="hoverOverImage-layer_bottom">
+				<img src="tut.png" alt="Tutorial slide" class="hoverOverImage-layer_bottom" id="conner_round">
 				<div class="hoverOverImage-layer_top">
 					<div class="hoverOverImage-text">Tutorial slide for privacy and ethics (FaceBook 101) </div>
 				</div>
@@ -134,7 +134,7 @@ programming projects in my spare time. </p>
 		<div class="column">
 		<br>
 			<div class="hoverOverImage">
-				<img src="shop1.jpg" alt="Shop" class="hoverOverImage-layer_bottom">
+				<img src="shop1.jpg" alt="Shop" class="hoverOverImage-layer_bottom" id="conner_round">
 				<div class="hoverOverImage-layer_top">
 					<div class="hoverOverImage-text">Rendering of the Family-owned store</div>
 				</div>
@@ -176,7 +176,7 @@ Artist Minder for New Zealand School of Music (Orchestra) and was also offered t
 </li>
 <br>
 <video class='center' width="640" height="480" controls>
-  <source src="cubadupa.mp4" type="video/mp4">
+  <source src="cubadupa.mp4" type="video/mp4" id="conner_round">
   Your browser does not support the video tag.
 </video>
 <br>
@@ -207,7 +207,7 @@ Artist Minder for New Zealand School of Music (Orchestra) and was also offered t
 		<div class="column">
 		<br>
 			<div class="hoverOverImage">
-				<img src="sc.jpg" alt="Shop" class="hoverOverImage-layer_bottom">
+				<img src="sc.jpg" alt="Shop" class="hoverOverImage-layer_bottom" id="conner_round">
 				<div class="hoverOverImage-layer_top">
 					<div class="hoverOverImage-text">Scots College lion statue</div>
 				</div>
@@ -251,6 +251,7 @@ Artist Minder for New Zealand School of Music (Orchestra) and was also offered t
 	display: block;
 }
 .hoverOverImage .hoverOverImage-layer_top {
+	border-radius: 10px;
 	opacity: 0;
 	position: absolute;
 	top: 0;
