@@ -148,7 +148,7 @@ a {
 .child {
   flex: 1 0 20%; /* less than 25% but more 0rr equal to 20% to account for margins - when 4 across is required */
   min-width: 370px; /* min-width on flex items not working in ios so use media queries instead*/
-  margin: 1em 0 0.5rem 0.5rem;
+  margin: 1rem .8rem 0.5rem .8rem;
 }
 /* example 2 - 3 across*/
 .parent2 .child {
