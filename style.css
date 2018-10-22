@@ -16,6 +16,24 @@ html, body {
 	/*background: #f1f1f1;*/
 }
 
+#fixedbacktotop {
+	color: #0F78C3;
+    border: none;
+	opacity:.5;
+    color: white;
+	width: 40px;
+	height: 40px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 0px;
+    right: 0px; 
+	margin:10px;
+	border-radius: 50%;
+}
+
 #conner_round{
 	border-radius: 10px;
 }
@@ -288,6 +306,7 @@ video {
 @media (min-width: 1335px) {.bottom-left {bottom: -22%;}
 @media (min-width: 1400px) {.bottom-left {bottom: -23%;}
 @media (min-width: 1465px) {.bottom-left {bottom: -23.5%;}
+
 
 
 /* =============== Tile grid CODE ===============*/
