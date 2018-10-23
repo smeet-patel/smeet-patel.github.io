@@ -19,7 +19,7 @@ html, body {
 #fixedbacktotop {
 	color: #0F78C3;
     border: none;
-	opacity:.;
+	opacity:.8;
     color: white;
 	width: 40px;
 	height: 40px;
@@ -235,6 +235,10 @@ video {
 }
 #lineA {
     line-height: 1.6;
+}
+
+#Dcolor{
+
 }
 
 .bottom-left {
