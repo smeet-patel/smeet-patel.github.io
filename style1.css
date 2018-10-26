@@ -283,8 +283,11 @@
  .btn-git > i{
      background:#444444;
 }
+ .btn-sw > i{
+     background:#FF7F00;
+}
  .btn-linkedin > i{
-     background:#007BB6;
+     background:#FF7F00;
 }
  .btn-icon > i {
      border-radius:10px 0 0 10px;
@@ -296,7 +299,7 @@
 }
  .btn-icon:hover > i,.btn-icon:focus > i {
      color:#FFF;
-     background:#fff 
+     background:#fff ;
 }
  .btn-icon > span {
      border-radius:0 10px 10px 0 
@@ -307,12 +310,37 @@
 }
  .btn-linkedin > span {
      background:#007BB6;
-     min-width: 250px;
 }
  .btn-git > span {
      background:#444444;
-     min-width: 250px;
 }
  .btn-git:hover > i,.btn-git:focus > i {
      color:#444444;
+}
+ .btn-sw > span {
+     background:#FF7F00;
+}
+ .btn-sw:hover > i,.btn-sw:focus > i {
+     color:#FF7F00;
+}
+
+/*---------------------------------------------*/
+.columnTwo {
+    float: left;
+    width: 48%;
+    padding: 10px;
+}
+
+/* Clear floats after the columns */
+.rowTwo:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+    .columnTwo {
+        width: 100%;
+    }
 }
