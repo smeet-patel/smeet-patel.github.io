@@ -283,8 +283,8 @@
  .btn-git > i{
      background:#444444;
 }
- .btn-sw > i{
-     background:#FF7F00;
+ .btn-cv > i{
+     background:#5ac048;
 }
  .btn-linkedin > i{
      background:#FF7F00;
@@ -322,6 +322,13 @@
 }
  .btn-sw:hover > i,.btn-sw:focus > i {
      color:#FF7F00;
+}
+/*Cyber CV*/
+ .btn-cv > span {
+     background:#5ac048;
+}
+ .btn-cv:hover > i,.btn-cv:focus > i {
+     color:#5ac048;
 }
 
 /*---------------------------------------------*/
