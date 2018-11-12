@@ -154,7 +154,8 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width:100%; max-width: 1200px;
+        width:90%;
+        max-width: 1300px;
         border-radius: 10px;
 }
 
@@ -165,6 +166,27 @@
 .centText{
     display: none;
  }
+}
+
+div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    border-radius: 15px;
+    max-width: 1200px;
+    margin: auto;
+    background: rgba(252, 252, 252, 0.9);
+}
+
+.stickrow{
+    margin-left:6%; 
+    font-size:calc(8px + 1.5vw);
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    color: #0F78C3;
+    margin:1em;
 }
 /* ------------ NAV BAR CODE ENDS ------------ */
 /* =============== FOOTER CODE ===============*/
