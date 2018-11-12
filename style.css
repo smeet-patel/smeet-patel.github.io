@@ -128,6 +128,43 @@
          display: block;
          text-align: left;
     }
+    .cenBanner1{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50%;
+        width: 60%;
+}
+ .centText{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    width: 80%;
+    color: #0F78C3;
+ }
+
+.cenBanner{
+    display: none;
+}
+
+}
+@media screen and (min-width: 600px) {
+.cenBanner{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width:100%; max-width: 1200px;
+        border-radius: 10px;
+}
+
+
+.cenBanner1{
+    display: none;
+}
+.centText{
+    display: none;
+ }
 }
 /* ------------ NAV BAR CODE ENDS ------------ */
 /* =============== FOOTER CODE ===============*/
