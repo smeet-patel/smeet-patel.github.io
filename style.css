@@ -1,171 +1,208 @@
-*{
-     font-family: "Myriad Pro", sans-serif;
+* {
+    font-family: "Myriad Pro", sans-serif;
 }
- body{
+
+body {
     /* My Theme Font */
-     font-family: "Myriad Pro", sans-serif;
+    font-family: "Myriad Pro", sans-serif;
 }
- html, body {
-     margin:0 ;
-     padding: 0;
-     background: white;
-     min-width: 100%;
-     min-height: 100%;
+
+p{
+    color: black;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: white;
+    min-width: 100%;
+    min-height: 100%;
     /* If white boxes are made, an off tone will show the box */
     /*background: #f1f1f1;
     */
 }
 
-#pb{
-	color:black;
+#pb {
+    color: black;
 }
 
-#bc{
-	color:#0F78C3;
+#bc {
+    color: #0F78C3;
 }
 
 
- #fixedbacktotop {
-     color: #0F78C3;
-     border: none;
-     opacity:.8;
-     color: white;
-     width: 40px;
-     height: 40px;
-     text-align: center;
-     text-decoration: none;
-     font-size: 16px;
-     cursor: pointer;
-     position: fixed;
-     bottom: 0px;
-     right: 0px;
-     margin:10px;
-     border-radius: 50%;
+#fixedbacktotop {
+    color: #0F78C3;
+    border: none;
+    opacity: .8;
+    color: white;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    margin: 10px;
+    border-radius: 50%;
 }
- #conner_round{
-     border-radius: 10px;
+
+#conner_round {
+    border-radius: 10px;
 }
- .intro, .biggerfont, .biggerfont1{
-     text-align: center;
-     color: #0F78C3;
+
+.intro,
+.biggerfont,
+.biggerfont1 {
+    text-align: center;
+    color: #0F78C3;
 }
- .biggerfont{
-     font-size:120%;
-     white-space: pre-wrap;
-     line-height: 1.6;
+
+.biggerfont {
+    font-size: 120%;
+    white-space: pre-wrap;
+    line-height: 1.6;
 }
- .intro{
-     line-height: 30%;
-     font-size:150%;
+
+.intro {
+    line-height: 30%;
+    font-size: 150%;
 }
- .biggerfont1{
-     font-size:120%;
+
+.biggerfont1 {
+    font-size: 120%;
 }
- .cont{
-     width:90%;
-     margin:auto ;
-     padding: 0;
+
+.cont {
+    width: 90%;
+    margin: auto;
+    padding: 0;
 }
+
 /* =============== NAV BAR CODE ===============*/
- .nav1 {
-     overflow: hidden;
+.nav1 {
+    overflow: hidden;
     /**background-color: white;
     **/
-     font-weight: 540;
-     font-family: "Myriad Pro", sans-serif;
+    font-weight: 540;
+    font-family: "Myriad Pro", sans-serif;
 }
+
 /* The nav bar from portfoilo */
- .nav1 a:not(:first-child){
+.nav1 a:not(:first-child) {
     float: right;
-     padding: 22px 23px;
+    padding: 22px 23px;
 }
+
 /* Styling Nav bar text */
- .nav1 a {
-     float: left;
-     display: block;
-     color: #0F78C3;
-     text-align: center;
-     padding: 10px 31px;
-     text-decoration: none;
-     font-size: 16px;
+.nav1 a {
+    float: left;
+    display: block;
+    color: #0F78C3;
+    text-align: center;
+    padding: 10px 31px;
+    text-decoration: none;
+    font-size: 16px;
 }
+
 /* text black and background light gray*/
- .nav1 a:hover {
-     background-color: #ddd;
-     color: black;
+.nav1 a:hover {
+    background-color: #ddd;
+    color: black;
 }
+
 /* styling of the logo title on left */
- .active {
-     background-color: #0F78C3;
-     color: white;
+.active {
+    background-color: #0F78C3;
+    color: white;
 }
+
 /* menubutton hidden default */
- .nav1 .menubutton {
-     display: none;
+.nav1 .menubutton {
+    display: none;
 }
+
 /* responsive design menu, just another way make this work on different screen sizes */
- @media screen and (max-width: 600px) {
-     .nav1 a:not(:first-child) {
+@media screen and (max-width: 600px) {
+    .nav1 a:not(:first-child) {
         display: none;
     }
-     .nav1 a.menubutton {
-         float: right;
-         display: block;
+
+    .nav1 a.menubutton {
+        float: right;
+        display: block;
     }
 }
+
 /* when the width of window is less than 600px (responsive menu) */
- @media screen and (max-width: 600px) {
-     .nav1.responsive {
+@media screen and (max-width: 600px) {
+    .nav1.responsive {
         position: relative;
     }
-     .nav1.responsive .menubutton {
-         position: absolute;
-         right: 0;
-         top: 0;
+
+    .nav1.responsive .menubutton {
+        position: absolute;
+        right: 0;
+        top: 0;
     }
-     .nav1.responsive a {
-         float: none;
-         display: block;
-         text-align: left;
+
+    .nav1.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
     }
-    .cenBanner1{
+
+    .cenBanner1,
+    .cenBannersquare {
         display: block;
         margin-left: auto;
         margin-right: auto;
         border-radius: 50%;
         width: 60%;
-}
- .centText{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 50%;
-    width: 80%;
-    color: #0F78C3;
- }
+    }
 
-.cenBanner{
-    display: none;
-}
+    .cenBannersquare {
+        border-radius: 10px;
+        width: 80%;
+    }
 
-}
-@media screen and (min-width: 600px) {
-.cenBanner{
+    .centText {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width:90%;
-        max-width: 1300px;
+        border-radius: 50%;
+        width: 80%;
+        color: grey;
+    }
+
+    .cenBanner {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 600px) {
+    .cenBanner {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        max-width: 1200px;
         border-radius: 10px;
-}
+    }
 
 
-.cenBanner1{
-    display: none;
-}
-.centText{
-    display: none;
- }
+    .cenBanner1,
+    .cenBannersquare {
+        display: none;
+    }
+
+    .centText {
+        display: none;
+    }
 }
 
 div.sticky {
@@ -179,219 +216,251 @@ div.sticky {
     background: rgba(252, 252, 252, 0.9);
 }
 
-.stickrow{
-    margin-left:6%; 
-    font-size:calc(8px + 1.5vw);
+.stickrow {
+    font-size: calc(8px + 1.5vw);
     position: relative;
+    padding: 10px;
     text-align: center;
     text-transform: uppercase;
     color: #0F78C3;
-    margin:1em;
+    margin: 1em;
 }
+
 /* ------------ NAV BAR CODE ENDS ------------ */
 /* =============== FOOTER CODE ===============*/
 /* footer take 100% width */
- .footer {
-     width: 100%;
+.footer {
+    width: 100%;
 }
+
 /* footer styling and trying to make it at bottom of the page left and button equal 0 */
- footer {
-     margin-top: 20px;
-     width: 100%;
-     margin: 0 auto;
-     background: #0F78C3;
-     padding: 15px 0px;
-     text-align: center;
-     right: 0;
-     bottom: 0;
-     left: 0;
+footer {
+    margin-top: 20px;
+    width: 100%;
+    margin: 0 auto;
+    background: #0F78C3;
+    padding: 15px 0px;
+    text-align: center;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
+
 /* links of the footer */
- footer a {
-     color: #ecf7fe;
-     font-size: 20px;
-     padding: 0px 5%;
-     border-right: 1px solid white;
-     transition: all .5s ease;
+footer a {
+    color: #ecf7fe;
+    font-size: 20px;
+    padding: 0px 5%;
+    border-right: 1px solid white;
+    transition: all .5s ease;
 }
- footer a:first-child {
+
+footer a:first-child {
     /* adding the 1px line to the left for 1st element */
-     border-left: 1px solid white;
+    border-left: 1px solid white;
 }
+
 /* for the links in footer on hover */
- footer a:hover {
-     color: white;
-     opacity:.8;
+footer a:hover {
+    color: white;
+    opacity: .8;
 }
+
 /* ------------ FOOTER CODE ENDS ------------ */
 /* +++++++++++++ INDEX PAGE CSS +++++++++++++ */
- .centerWrap{
-     width:80%;
-     margin:auto;
-     font-size:18px;
-     color: #0F78C3;
-     margin: auto;
+.centerWrap {
+    width: 80%;
+    margin: auto;
+    font-size: 18px;
+    color: #0F78C3;
+    margin: auto;
 }
+
 /* Create two unequal columns that floats next to each other */
 /* Left column */
- .leftcolumn {
-     margin:20px;
-     float: left;
-     width: 60%;
+.leftcolumn {
+    margin: 20px;
+    float: left;
+    width: 60%;
 }
- .w{
-     color:white;
-     font-family: "Myriad Pro", sans-serif;
-     background-color: #0F78C3;
-     text-align:center;
-     font-style:italic;
-     padding:10px;
-     border-radius: 10px;
+
+.w {
+    color: white;
+    font-family: "Myriad Pro", sans-serif;
+    background-color: #0F78C3;
+    text-align: center;
+    font-style: italic;
+    padding: 10px;
+    border-radius: 10px;
 }
- hr {
-     height: 1px;
-     border: 0;
-     border-top: 2px solid #0F78C3;
-     opacity:.5;
-     margin: 1em 0;
-     padding: 0;
+
+hr {
+    height: 1px;
+    border: 0;
+    border-top: 2px solid #0F78C3;
+    opacity: .5;
+    margin: 1em 0;
+    padding: 0;
 }
- hr.s1 {
-     background-color: #fff;
-     border-top: 2px dashed #0F78C3;
+
+hr.s1 {
+    background-color: #fff;
+    border-top: 2px dashed #0F78C3;
 }
- .center {
-     margin-left: auto;
-     margin-right: auto;
-     display: block 
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block
 }
- video {
-     max-width: 100%;
-     height: auto;
+
+video {
+    max-width: 100%;
+    height: auto;
 }
- .responsiveImg {
-     width: 100%;
-     height: auto;
-     max-height:600px;
-     opacity:0.65;
-     position:0;
+
+.responsiveImg {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    opacity: 0.65;
+    position: 0;
 }
- #lineA {
-     line-height: 1.6;
+
+#lineA {
+    line-height: 1.6;
 }
- #Dcolor{
+
+#Dcolor {}
+
+.bottom-left {
+    position: absolute;
+    left: 10vw;
+    font-size: 8vw;
+    color: white;
+    bottom: -16%;
+    center: 0;
 }
- .bottom-left {
-     position: absolute;
-     left: 10vw;
-     font-size:8vw;
-     color:white;
-     bottom: -16%;
-     center:0;
-}
- @media screen and (max-width: 600px) {
-     .add1{
-         bottom: 20%;
+
+@media screen and (max-width: 600px) {
+    .add1 {
+        bottom: 20%;
     }
 }
- .bannerContainer{
-     position: relative;
-     text-align: center;
-     color: white;
+
+.bannerContainer {
+    position: relative;
+    text-align: center;
+    color: white;
 }
+
 /* Top right text */
- .top-1left {
-     position: absolute;
-     top: 511px;
-     left: 100px;
-     opacity:1;
-     font-size:80px;
-     color:white;
-     width: 100%;
-     height: auto;
-     max-height:600px;
-     opacity:0.65;
-     position:0;
+.top-1left {
+    position: absolute;
+    top: 511px;
+    left: 100px;
+    opacity: 1;
+    font-size: 80px;
+    color: white;
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    opacity: 0.65;
+    position: 0;
 }
- .top-right {
-     position: absolute;
-     top: 200px;
-     right: 80px;
-     font-size:28px;
-     font-family: "Myriad Pro", sans-serif;
-     color: #0F78C3;
-     padding-top:30px;
+
+.top-right {
+    position: absolute;
+    top: 200px;
+    right: 80px;
+    font-size: 28px;
+    font-family: "Myriad Pro", sans-serif;
+    color: #0F78C3;
+    padding-top: 30px;
 }
- .top-left {
-     position: absolute;
-     top: 400px;
-     left: 100px;
-     opacity:0.4;
-     font-size:26px;
+
+.top-left {
+    position: absolute;
+    top: 400px;
+    left: 100px;
+    opacity: 0.4;
+    font-size: 26px;
 }
- .top-1left {
-     position: absolute;
-     top: 511px;
-     left: 100px;
-     opacity:1;
-     font-size:80px;
-     color:white;
+
+.top-1left {
+    position: absolute;
+    top: 511px;
+    left: 100px;
+    opacity: 1;
+    font-size: 80px;
+    color: white;
 }
-	@media (min-width: 1060px) {
+
+@media (min-width: 1060px) {
     .bottom-left {
         bottom: -18%;
     }
-     @media (min-width: 1135px) {
-		.bottom-left {
-			bottom: -19%;
-	}
-	 @media (min-width: 1235px) {
-		.bottom-left {
-			bottom: -20%;
-	}
-	 @media (min-width: 1290px) {
-		.bottom-left {
-			bottom: -21%;
-	}
-	 @media (min-width: 1335px) {
-		.bottom-left {
-			bottom: -22%;
-	}
-	 @media (min-width: 1400px) {
-		.bottom-left {
-			bottom: -23%;
-	}
-	 @media (min-width: 1465px) {
-		.bottom-left {
-			bottom: -23.5%;
-	}
-/* =============== Tile grid CODE ===============*/
-/**changed from my web gallery**/
- .row {
-	 display: flex;
-	 flex-wrap: wrap;
-	 padding: 0 4px;
-}
-/* Create two equal columns that sits next to each other */
- .column {
-	 flex: 49%;
-	 max-width: 49%;
-	 padding: 0 4px;
-	 display: block;
-	 margin-left: auto;
-	 margin-right: auto;
-}
- .column img {
-	 vertical-align: middle;
-}
-/* Responsive layout - makes the single columns stack on top of each other instead of next to each other */
- @media screen and (max-width: 600px) {
-	 .column {
-		 flex: 99%;
-		 max-width: 99%;
-	}
-}
-/* =============== Tile grid CODE ===============*/
-/* =============== Tile grid CODE ===============*/
-/* ------------ Tile grid CODE ENDS ------------ */
- 
+
+    @media (min-width: 1135px) {
+        .bottom-left {
+            bottom: -19%;
+        }
+
+        @media (min-width: 1235px) {
+            .bottom-left {
+                bottom: -20%;
+            }
+
+            @media (min-width: 1290px) {
+                .bottom-left {
+                    bottom: -21%;
+                }
+
+                @media (min-width: 1335px) {
+                    .bottom-left {
+                        bottom: -22%;
+                    }
+
+                    @media (min-width: 1400px) {
+                        .bottom-left {
+                            bottom: -23%;
+                        }
+
+                        @media (min-width: 1465px) {
+                            .bottom-left {
+                                bottom: -23.5%;
+                            }
+
+                            /* =============== Tile grid CODE ===============*/
+                            /**changed from my web gallery**/
+                            .row {
+                                display: flex;
+                                flex-wrap: wrap;
+                                padding: 0 4px;
+                            }
+
+                            /* Create two equal columns that sits next to each other */
+                            .column {
+                                flex: 49%;
+                                max-width: 49%;
+                                padding: 0 4px;
+                                display: block;
+                                margin-left: auto;
+                                margin-right: auto;
+                            }
+
+                            .column img {
+                                vertical-align: middle;
+                            }
+
+                            /* Responsive layout - makes the single columns stack on top of each other instead of next to each other */
+                            @media screen and (max-width: 600px) {
+                                .column {
+                                    flex: 99%;
+                                    max-width: 99%;
+                                }
+                            }
+
+                            /* =============== Tile grid CODE ===============*/
+                            /* =============== Tile grid CODE ===============*/
+                            /* ------------ Tile grid CODE ENDS ------------ */
