@@ -13,6 +13,10 @@ body {
     */
 }
 
+p,.dark{
+    color: #555;
+}
+
 .centerWrap {
     width: 80%;
     margin: auto;
