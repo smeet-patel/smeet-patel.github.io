@@ -1,0 +1,317 @@
+/* =============== general ===============*/
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-width: 100%;
+    color: #555;
+    min-height: 100%;
+    /* If white boxes are made, an off tone will show the box */
+    /*background: #f1f1f1;
+    */
+}
+
+.centerWrap {
+    width: 80%;
+    margin: auto;
+    font-size: 18px;
+    color: #0F78C3;
+    margin: auto;
+}
+
+/* =============== NAV BAR CODE ===============*/
+.nav1 {
+    overflow: hidden;
+    /**background-color: white;
+    **/
+    font-weight: 540;
+    font-family: "Myriad Pro", sans-serif;
+}
+
+/* The nav bar from portfoilo */
+.nav1 a:not(:first-child) {
+    float: right;
+    padding: 22px 23px;
+}
+
+/* Styling Nav bar text */
+.nav1 a {
+    float: left;
+    display: block;
+    color: #0F78C3;
+    text-align: center;
+    padding: 10px 31px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* text black and background light gray*/
+.nav1 a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* styling of the logo title on left */
+.active {
+    background-color: #0F78C3;
+    color: white;
+}
+
+/* menubutton hidden default */
+.nav1 .menubutton {
+    display: none;
+}
+
+/* responsive design menu, just another way make this work on different screen sizes */
+@media screen and (max-width: 600px) {
+    .nav1 a:not(:first-child) {
+        display: none;
+    }
+
+    .nav1 a.menubutton {
+        float: right;
+        display: block;
+    }
+}
+
+/* when the width of window is less than 600px (responsive menu) */
+@media screen and (max-width: 600px) {
+    .nav1.responsive {
+        position: relative;
+    }
+
+    .nav1.responsive .menubutton {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .nav1.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .cenBanner1,
+    .cenBannersquare {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50%;
+        width: 60%;
+    }
+
+    .cenBannersquare {
+        border-radius: 10px;
+        width: 80%;
+    }
+
+    .centText {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50%;
+        width: 80%;
+        color: grey;
+    }
+
+    .cenBanner {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 600px) {
+    .cenBanner {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        max-width: 1200px;
+        border-radius: 10px;
+    }
+
+    .cenBanner1,
+    .cenBannersquare {
+        display: none;
+    }
+
+    .centText {
+        display: none;
+    }
+}
+
+div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    border-radius: 15px;
+    max-width: 1200px;
+    margin: auto;
+    background: rgba(252, 252, 252, 0.9);
+}
+
+.stickrow {
+    font-size: calc(8px + 1.5vw);
+    position: relative;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #0F78C3;
+    margin: 1em;
+}
+
+/* ------------ NAV BAR CODE ENDS ------------ */
+/* =============== FOOTER CODE ===============*/
+/* footer take 100% width */
+.footer {
+    width: 100%;
+}
+
+/* footer styling and trying to make it at bottom of the page left and button equal 0 */
+footer {
+    margin-top: 20px;
+    width: 100%;
+    margin: 0 auto;
+    background: #0F78C3;
+    padding: 15px 0px;
+    text-align: center;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+/* links of the footer */
+footer a {
+    color: #ecf7fe;
+    font-size: 20px;
+    padding: 0px 5%;
+    border-right: 1px solid white;
+    transition: all .5s ease;
+}
+
+footer a:first-child {
+    /* adding the 1px line to the left for 1st element */
+    border-left: 1px solid white;
+}
+
+/* for the links in footer on hover */
+footer a:hover {
+    color: white;
+    opacity: .8;
+}
+
+/* ------------ FOOTER CODE ENDS ------------ */
+
+div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    border-radius: 15px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.progress-container {
+    top:-20px;
+    width: 100%;
+    position: relative;
+    height: 8px;
+    background: #ccc;
+  }
+  
+  .progress-bar {
+    height: 8px;
+    background: #0F78C3;
+    width: 0%;
+  }
+
+
+.progressbar3 li {
+    float: none;
+    display: inline-block;
+    list-style-type: none;
+    /* margin: auto; */
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    color:#0F78C3;
+    margin-top: 10px;
+}
+
+nav {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    margin: 0 auto;
+  }
+  nav ul {
+    list-style: none;
+    text-align: center;
+    padding-inline-start: 0;
+    font-size: calc(.8vw + 8px);
+  }
+  nav ul li {
+    display: inline-block;
+  }
+  nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #0F78C3;
+    text-transform: uppercase;
+    padding: calc(.8vw + 5px);
+    margin: 0 1.5vw;
+  }
+  nav ul li a,
+  nav ul li a:after,
+  nav ul li a:before {
+    transition: all .5s;
+  }
+  nav ul li a:hover {
+    color: #555;
+  }
+
+  nav.shift ul li a {
+    position:relative;
+    z-index: 1;
+  }
+  nav.shift ul li a:hover {
+    color:white;
+  }
+  nav.shift ul li a:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 1px;
+    content: '.';
+    color: transparent;
+    background:#0F78C3;
+    visibility: none;
+    opacity: 0;
+    z-index: -1;
+  }
+  nav.shift ul li a:hover:after {
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+  }
+
+  /**/
+  .w {
+    color: white;
+    background-color: #0F78C3;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight:lighter;
+    padding: 10px;
+    border-radius: 10px;
+}
