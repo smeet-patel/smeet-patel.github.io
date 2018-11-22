@@ -88,44 +88,107 @@
         </ul>
         <h2>General Diagram / Brainstorm </h2>
         <img src="dimmuBurger/generaldiagram_dimmu.PNG" alt="dimmu Burger" class="cenimg">
-        <p style="text-align:center;"><i>Left Diagram shows the user interactions with the web application and expected information flow. The right
-            diagram shows our idea of how the two application will communicate with each server.</i></p>
+        <p style="text-align:center;"><i>Left Diagram shows the user interactions with the web application and expected
+                information flow. The right
+                diagram shows our idea of how the two application will communicate with each server.</i></p>
         <h2>Plan Design and Initial Reseach Process </h2>
         <p>Our first step was to individually research the background on a burger ordering system and make a note of
             the feature which we thought were important. Following this, we then came back together to share our ideas
             and thoughts. This led to drafting an outline of the general structure of the applications and integration
             with the server. </p>
-            <div class="centerWrap">
-                    <!--Centering everything in the div-->
-                    <!--enable for the flex tiles row and col--->
-                    <div class="row">
-                        <div class="column">
-                            <br>
-                            <!--container consist the image and text to display center
+        <div class="centerWrap">
+            <!--Centering everything in the div-->
+            <!--enable for the flex tiles row and col--->
+            <div class="row">
+                <div class="column">
+                    <br>
+                    <!--container consist the image and text to display center
                               when full screen---------------------------------------->
-                            <div class="hoverOverImage">
-                                <img src="dimmuBurger/burger_fuel.png" alt="burger fuel ordering" class="hoverOverImage-layer_bottom" id="conner_round">
-                                <!-- <a href="mywork.html"> -->
-                                    <div class="hoverOverImage-layer_top">
-                                        <div class="hoverOverImage-text">Researching example of burger ordering (Burger Fuel)</div>
-                                    </div>
-                                <!-- </a> -->
-                            </div>
+                    <div class="hoverOverImage">
+                        <img src="dimmuBurger/burger_fuel.png" alt="burger fuel ordering" class="hoverOverImage-layer_bottom"
+                            id="conner_round">
+                        <!-- <a href="mywork.html"> -->
+                        <div class="hoverOverImage-layer_top">
+                            <div class="hoverOverImage-text">Researching example of burger ordering (Burger Fuel)</div>
                         </div>
-                        <!--second col-------------->
-                        <div class="column">
-                            <br>
-                            <div class="hoverOverImage">
-                                <img src="dimmuBurger/kitchen_mcD.jpg" alt="mcdonalds kitchen" class="hoverOverImage-layer_bottom" id="conner_round">
-                                <!-- <a href="mywork.html"> -->
-                                    <div class="hoverOverImage-layer_top">
-                                        <div class="hoverOverImage-text">Imagining McDonald's kitchen production line system</div>
-                                    </div>
-                                <!-- </a> -->
-                            </div>
-                        </div>
+                        <!-- </a> -->
                     </div>
                 </div>
+                <!--second col-------------->
+                <div class="column">
+                    <br>
+                    <div class="hoverOverImage">
+                        <img src="dimmuBurger/kitchen_mcD.jpg" alt="mcdonalds kitchen" class="hoverOverImage-layer_bottom"
+                            id="conner_round">
+                        <!-- <a href="mywork.html"> -->
+                        <div class="hoverOverImage-layer_top">
+                            <div class="hoverOverImage-text">Imagining McDonald's kitchen production line system</div>
+                        </div>
+                        <!-- </a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2>Project Timeline</h2> 
+            <img src="dimmuBurger/timeline_dimmu.PNG" alt="dimmu Burger" class="cenimg">
+        <h2>Requirements</h2>
+        <h3 style="color: orange">Web App </h3>
+        <ul>
+            <li style="color:mediumslateblue">Customers </li>
+            <ol class="dark">
+                <li>Can check for ingredient availability - only show ingredients available </li>
+                <li>Can create custom burger(s) </li>
+                <li>Can select multiple of the same ingredients </li>
+                <li>Can order burger </li>
+                <li>Can order multiple burgers </li>
+                <li>Can be notified of progress of order</li>
+                <li>The user interface should be responsive, but the production interface is not responsive. </li>
+            </ol>
+        </ul>
+        <h3 style="color: orange">Production Line App </h3>
+        <ul>
+            <li style="color:mediumslateblue">Kitchen Staff(s) </li>
+            <ol class="dark">
+                <li>Can receive customer order </li>
+                <li>Can check if ingredients are available </li>
+                <li>Can mark off orders as made </li>
+            </ol>
+            <li style="color:mediumslateblue">Admin Staff(s) </li>
+            <ol class="dark">
+                <li>Can check ingredient stock levels </li>
+                <li>Can order new ingredients as require </li>
+                <li>Require login </li>
+            </ol>
+        </ul>
+        <h3 style="color: orange">Database  </h3>
+        <ul>
+                <li style="color:mediumslateblue">Ingredients </li>
+                <ul class="dark">
+                    <li>Ingredient category (e.g.: Bread, Meat/Vege, Produce, Cheese) </li>
+                    <li>Specific ingredient name (e.g. Chicken, Beef, Falafel)  </li>
+                    <li>Quantity in stock  </li>
+                    <li>Minimum restock level   </li>
+                </ul>
+                <li style="color:mediumslateblue">Burger recipes  </li>
+                <ul class="dark">
+                    <li>Order number  </li>
+                    <li>Burgers required (may be multiple) </li>
+                    <li>Order progress  </li>
+                </ul>
+                <li style="color:mediumslateblue">Logins </li>
+                <ul class="dark">
+                    <li>Login details for Production line admin staff </li>
+                </ul>
+            </ul>
+            <h2>Context Diagram</h2> 
+            <img src="dimmuBurger/contextDiagram_dimmu.PNG" alt="dimmu Burger" class="cenimg"> 
+            <h2>Databases Schema</h2> 
+            <img src="dimmuBurger/databaseSceama_dimmu.PNG" alt="dimmu Burger" class="cenimg"> 
+            <h2>Application Wireframes</h2> 
+            <img src="dimmuBurger/wireframe_dimmu1.PNG" alt="dimmu Burger" class="cenimg" style="max-width: 800px"> 
+            <img src="dimmuBurger/wireframe_dimmu2.PNG" alt="dimmu Burger" class="cenimg" style="max-width: 800px"> 
+            <img src="dimmuBurger/wireframe_dimmu3.PNG" alt="dimmu Burger" class="cenimg" style="max-width: 800px"> 
+            <img src="dimmuBurger/wireframe_dimmu4.PNG" alt="dimmu Burger" class="cenimg" style="max-width: 800px"> 
     </div>
 
     <!-- footer ------------------------------>
