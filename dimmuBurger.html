@@ -35,8 +35,8 @@
         <nav class="shift">
             <ul>
                 <li><a href="#overview">Overview</a></li>
-                <li><a href="#">Planning</a></li>
-                <li><a href="#">Development</a></li>
+                <li><a href="#planning">Planning</a></li>
+                <li><a href="#dev">Development</a></li>
                 <li><a href="#">Reflection</a></li>
             </ul>
         </nav>
@@ -56,9 +56,9 @@
                 Java Application)</li>
             <li><b>Kelly: </b>Implementation Officer (implemented the Heroku hosting and help debug, test and style the
                 web & java application)</li>
-            <li><b>Sinny: </b>Content Manager (produce some content & gathered icons and helped in the production line
+            <li ><b>Sinny: </b>Content Manager (produce some content & gathered icons and helped in the production line
                 application.</li>
-            <li><b>Heba: </b> Java GUI Developer (produced the production line login GUI and learning basic. <u>Away
+            <li id="planning"><b>Heba: </b> Java GUI Developer (produced the production line login GUI and learning basic. <u>Away
                     for 2 days.</u>)</li>
         </ul>
         <h1 class="w">Planning</h1>
@@ -129,8 +129,8 @@
                 </div>
             </div>
         </div>
-        <h2>Project Timeline</h2> 
-            <img src="dimmuBurger/timeline_dimmu.PNG" alt="dimmu Burger" class="cenimg">
+        <h2>Project Timeline</h2>
+        <img src="dimmuBurger/timeline_dimmu.PNG" alt="dimmu Burger" class="cenimg">
         <h2>Requirements</h2>
         <h3 style="color: orange">Web App </h3>
         <ul>
@@ -160,35 +160,54 @@
                 <li>Require login </li>
             </ol>
         </ul>
-        <h3 style="color: orange">Database  </h3>
+        <h3 style="color: orange">Database </h3>
         <ul>
-                <li style="color:mediumslateblue">Ingredients </li>
-                <ul class="dark">
-                    <li>Ingredient category (e.g.: Bread, Meat/Vege, Produce, Cheese) </li>
-                    <li>Specific ingredient name (e.g. Chicken, Beef, Falafel)  </li>
-                    <li>Quantity in stock  </li>
-                    <li>Minimum restock level   </li>
-                </ul>
-                <li style="color:mediumslateblue">Burger recipes  </li>
-                <ul class="dark">
-                    <li>Order number  </li>
-                    <li>Burgers required (may be multiple) </li>
-                    <li>Order progress  </li>
-                </ul>
-                <li style="color:mediumslateblue">Logins </li>
-                <ul class="dark">
-                    <li>Login details for Production line admin staff </li>
-                </ul>
+            <li style="color:mediumslateblue">Ingredients </li>
+            <ul class="dark">
+                <li>Ingredient category (e.g.: Bread, Meat/Vege, Produce, Cheese) </li>
+                <li>Specific ingredient name (e.g. Chicken, Beef, Falafel) </li>
+                <li>Quantity in stock </li>
+                <li>Minimum restock level </li>
             </ul>
-            <h2>Context Diagram</h2> 
-            <img src="dimmuBurger/contextDiagram_dimmu.PNG" alt="dimmu Burger" class="cenimg"> 
-            <h2>Databases Schema</h2> 
-            <img src="dimmuBurger/databaseSceama_dimmu.PNG" alt="dimmu Burger" class="cenimg"> 
-            <h2>Application Wireframes</h2> 
-            <img src="dimmuBurger/wireframe_dimmu1.PNG" alt="dimmu Burger" class="cenimg" style="max-width: 800px"> 
-            <img src="dimmuBurger/wireframe_dimmu2.PNG" alt="dimmu Burger" class="cenimg" style="max-width: 800px"> 
-            <img src="dimmuBurger/wireframe_dimmu3.PNG" alt="dimmu Burger" class="cenimg" style="max-width: 800px"> 
-            <img src="dimmuBurger/wireframe_dimmu4.PNG" alt="dimmu Burger" class="cenimg" style="max-width: 800px"> 
+            <li style="color:mediumslateblue">Burger recipes </li>
+            <ul class="dark">
+                <li>Order number </li>
+                <li>Burgers required (may be multiple) </li>
+                <li>Order progress </li>
+            </ul>
+            <li style="color:mediumslateblue">Logins </li>
+            <ul class="dark">
+                <li>Login details for Production line admin staff </li>
+            </ul>
+        </ul>
+        <h2>Context Diagram</h2>
+        <img src="dimmuBurger/contextDiagram_dimmu.PNG" alt="dimmu Burger" class="cenimg">
+        <p style="text-align:center;"><i>The context diagram shows the databases as the central server system and web
+                and production app interacting with the databases.</i></p>
+        <h2>Databases Schema</h2>
+        <img src="dimmuBurger/databaseSceama_dimmu.PNG" alt="dimmu Burger" class="cenimg">
+        <p style="text-align:center;"><i>Our databases design with a orders, ingredients and users.</i></p>
+        <h2>Application Wireframes</h2>
+        <p>I often use wireframes for projects which have user interfaces as it helps me stay focused when developing
+            the application or prototype because they are simple outlines of the UI layout. Many of the elements are
+            placeholders, so this allows me to determine if I need to acquire or create content, develop the visuals
+            and functionality. </p>
+        <img src="dimmuBurger/wireframe_dimmu1.PNG" alt="dimmu Burger" class="cenimg" style="max-width: 800px">
+        <p style="text-align:center;"><i>The first wireframe is the landing page of the web application with a banner
+                on top and branding statement below. <br>The second wireframe shows the customer ordering form with a
+                step
+                progress bar on top to show the customer their current status. </i></p>
+        <img src="dimmuBurger/wireframe_dimmu2.PNG" alt="dimmu Burger" class="cenimg" style="max-width: 800px">
+        <p style="text-align:center;"><i>The third wireframe shows how the customer can complete and submit the order
+                by validation of email and user details.<br>The fourth wireframe displays the login screen for the Java
+                production line application, with a simple entry for the kitchen staff and a login for the admin staff.</i></p>
+        <img src="dimmuBurger/wireframe_dimmu3.PNG" alt="dimmu Burger" class="cenimg" style="max-width: 800px">
+        <p style="text-align:center;"><i>Above is a sketched wireframe of the screen where the orders will appear, and
+                the update of the status of the burger creation can be updated. </i></p>
+        <img src="dimmuBurger/wireframe_dimmu4.PNG" alt="dimmu Burger" class="cenimg" style="max-width: 800px">
+        <p style="text-align:center;" id="dev"><i>The last Wireframe shows the ingredients ordering dashboard where the admin
+                staff will log in to order.</i></p>
+        <h1 class="w">Development</h1>
     </div>
 
     <!-- footer ------------------------------>
