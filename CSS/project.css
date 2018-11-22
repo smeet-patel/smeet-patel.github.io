@@ -147,17 +147,6 @@ p,.dark{
     }
 }
 
-div.sticky {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    border-radius: 15px;
-    max-width: 1200px;
-    margin: auto;
-    background: rgba(252, 252, 252, 0.9);
-}
-
 .stickrow {
     font-size: calc(8px + 1.5vw);
     position: relative;
@@ -216,22 +205,23 @@ div.sticky {
     top: 0;
     z-index: 1;
     width: 100%;
+    max-width: 1200px;
+    z-index:1;
     border-radius: 15px;
     margin: auto;
     background: rgba(255, 255, 255, 0.95);
 }
 
 .progress-container {
-    top:-20px;
+    top:calc((2.4vw + 26px));
     width: 100%;
-    position: relative;
-    height: 8px;
+    position: absolute;
     background: #ccc;
   }
   
   .progress-bar {
-    height: 8px;
-    background: #0F78C3;
+    height: 4px;
+    background: rgba(15, 120, 195, 0.7);
     width: 0%;
   }
 
@@ -267,8 +257,8 @@ nav {
     text-decoration: none;
     color: #0F78C3;
     text-transform: uppercase;
-    padding: calc(.8vw + 5px);
-    margin: 0 1.5vw;
+    padding:  calc(.8vw + 4px);
+    margin: 3px 1.5vw;
   }
   nav ul li a,
   nav ul li a:after,
