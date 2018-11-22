@@ -13,10 +13,22 @@ body {
     */
 }
 
-p,.dark{
+/* gray font*/
+p,
+.dark {
     color: #555;
 }
 
+.cenimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 10px;
+}
+
+/* center content*/
 .centerWrap {
     width: 80%;
     margin: auto;
@@ -198,7 +210,7 @@ footer a:hover {
 }
 
 /* ------------ FOOTER CODE ENDS ------------ */
-
+/* =============== Stick scroll progress ===============*/
 div.sticky {
     position: -webkit-sticky;
     position: sticky;
@@ -206,26 +218,27 @@ div.sticky {
     z-index: 1;
     width: 100%;
     max-width: 1200px;
-    z-index:1;
+    z-index: 1;
     border-radius: 15px;
     margin: auto;
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(255, 255, 255, 0.8);
 }
 
+/* postions of bar*/
 .progress-container {
-    top:calc((2.4vw + 26px));
+    top: calc((2.4vw + 26px));
     width: 100%;
     position: absolute;
     background: #ccc;
-  }
-  
-  .progress-bar {
+}
+
+.progress-bar {
     height: 4px;
     background: rgba(15, 120, 195, 0.7);
     width: 0%;
-  }
+}
 
-
+/* nav bar for project*/
 .progressbar3 li {
     float: none;
     display: inline-block;
@@ -234,7 +247,7 @@ div.sticky {
     font-size: 12px;
     text-align: center;
     text-transform: uppercase;
-    color:#0F78C3;
+    color: #0F78C3;
     margin-top: 10px;
 }
 
@@ -242,41 +255,48 @@ nav {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 100%;
     margin: 0 auto;
-  }
-  nav ul {
+}
+
+nav ul {
     list-style: none;
     text-align: center;
     padding-inline-start: 0;
     font-size: calc(.8vw + 8px);
-  }
-  nav ul li {
+}
+
+nav ul li {
     display: inline-block;
-  }
-  nav ul li a {
+}
+
+nav ul li a {
     display: block;
     text-decoration: none;
     color: #0F78C3;
     text-transform: uppercase;
-    padding:  calc(.8vw + 4px);
+    padding: calc(.8vw + 4px);
     margin: 3px 1.5vw;
-  }
-  nav ul li a,
-  nav ul li a:after,
-  nav ul li a:before {
-    transition: all .5s;
-  }
-  nav ul li a:hover {
-    color: #555;
-  }
+}
 
-  nav.shift ul li a {
-    position:relative;
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+    transition: all .5s;
+}
+
+nav ul li a:hover {
+    color: #555;
+}
+
+nav.shift ul li a {
+    position: relative;
     z-index: 1;
-  }
-  nav.shift ul li a:hover {
-    color:white;
-  }
-  nav.shift ul li a:after {
+}
+
+nav.shift ul li a:hover {
+    color: white;
+}
+
+nav.shift ul li a:after {
     display: block;
     position: absolute;
     top: 0;
@@ -288,24 +308,131 @@ nav {
     height: 1px;
     content: '.';
     color: transparent;
-    background:#0F78C3;
+    background: #0F78C3;
     visibility: none;
     opacity: 0;
     z-index: -1;
-  }
-  nav.shift ul li a:hover:after {
+}
+
+nav.shift ul li a:hover:after {
     opacity: 1;
     visibility: visible;
     height: 100%;
-  }
+}
 
-  /**/
-  .w {
+/*header*/
+.w {
     color: white;
     background-color: #0F78C3;
     text-align: center;
     text-transform: uppercase;
-    font-weight:lighter;
+    font-weight: lighter;
     padding: 10px;
+    font-size: calc(2vw + 10px);
+    border-radius: 10px;
+}
+
+/* image 2 col */
+.centerWrap {
+    width: 80%;
+    margin: auto;
+    font-size: 18px;
+    color: #0F78C3;
+    margin: auto;
+}
+
+/**changed from my web gallery**/
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+    flex: 49%;
+    max-width: 49%;
+    padding: 0 4px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.column img {
+    vertical-align: middle;
+}
+
+.hoverOverImage * {
+    box-sizing: border-box;
+}
+
+.hoverOverImage {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+}
+
+.hoverOverImage img {
+    max-width: 100%;
+}
+
+.hoverOverImage .hoverOverImage-layer_bottom {
+    display: block;
+}
+
+.hoverOverImage .hoverOverImage-layer_top {
+    border-radius: 10px;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 15px;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -ms-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.hoverOverImage:hover .hoverOverImage-layer_top,
+.hoverOverImage.active .hoverOverImage-layer_top {
+    opacity: 1;
+}
+
+.hoverOverImage .hoverOverImage-text {
+    text-align: center;
+    font-size: 160%;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.hoverOverImage .hoverOverImage-text_mobile {
+    font-size: 160%;
+    border-top: 1px solid rgb(179, 179, 179);
+    /* for old browsers */
+    border-top: 1px solid rgba(179, 179, 179, 0.7);
+    margin-top: 5px;
+    padding-top: 2px;
+    display: none;
+}
+
+.hoverOverImage.active .hoverOverImage-text_mobile {
+    display: block;
+}
+
+#conner_round {
     border-radius: 10px;
 }
