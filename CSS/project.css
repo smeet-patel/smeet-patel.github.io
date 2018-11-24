@@ -28,6 +28,13 @@ p,
     border-radius: 10px;
 }
 
+.cenframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
 /* center content*/
 .centerWrap {
     width: 80%;
