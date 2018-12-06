@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sports World</title>
+		<!-- Stylesheets ------------------------------>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="style1.css">
+		<!-- My my mini icon ------------------------------>
+		<link rel="icon" href="spMini.png">
+		<!-- Make the scale of screen to 1 to device ------------------------------>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script type="text/javascript" src="Smeetjavascript.js"></script>
+	</head>
+	<body>
+		<!-- nav bar ------------------------------>
+		<div class="nav1" id="mynav1">
+			<a href="index.html" class="active"><img src="spw1.png" height="40"></a>
+			<!-- <a href="mycon.html">CONTACT</a> -->
+			<a href="myblog.html">BLOG</a>
+			<a href="mywork.html">MY WORK</a>
+			<a href="aboutme.html">ABOUT ME</a>
+			<a href="javascript:void(0);" style="font-size:15px;" class="menubutton" onclick="myFunction()">&#9776;</a>
+		</div>
+        <!-- banner  ------------------------------>
+        <br>
+        <img src="everest/everest_banner.png" alt="Smeet" class="cenBanner">
+        <img src="everest/everest_small.png" alt="Smeet" class="cenBannersquare">
+		<!-- Contact me buttons ------------------------------>
+		<div class="centerWrap">
+			<h1 class="w">Everest</h1>
+			<div class="containerWork">
+			<div class="rowTwo">
+  <div class="columnTwo" align="center">
+    <a class="btn btn-icon btn-git" href="https://github.com/smeet-patel/SportsWorld-HTML-CSS-JS-PHP-"><i class="fa fa-github"></i><span>SPORTS WORLD on Git Hub</span></a>
+  </div>
+  <div class="columnTwo" align="center">
+    <a class="btn btn-icon btn-sw" href="https://smeet-patel.github.io/SportsWorld/"><i class="fa fa-spinner"></i><span>SPORTS WORLD Demo</span></a>
+  </div>
+</div>
+			</div>
+			<h2>Objective:</h2>
+			<p id="pb">Create a website or web application using the five languages <b>(HTML, CSS, Javascript and PHP with MariaDB which uses SQL)</b>.</p>
+			<h2>Proposes of the project:</h2>
+			<li id="pb">It has been some time since I have personally done some HTML, CSS apart from Workshop tutoring at VUW for INFO 101. </li>
+			<li id="pb">Secondly wanted build on my Javascript knowledge. </li>
+			<li id="pb">I wanted to learn about PHP and to use MariaDB. </li>
+			<p id="pb">So far I have been limited integrating SQL with the web-based application and have used JSON data structure before. Since I am using this personal project as a foundation for my future web-based projects, I have restricted myself with the time constraint of <b>3 days</b> (during own time, after usual daily activities).</p>
+			<p id="pb">Sports World is a website which is a central sports supporter site for various teams and athletes. It also has a Login and new user registration which uses PHP and SQL to make the website more useful.</p>
+			<h3 class="w">Day 1</h3>
+			<li id="pb">Firstly I learnt how to set up a web server on my laptop using Ubuntu.</li>
+			<li id="pb">Using Ubuntu, made a user and created a directory path to the folder on my device, this enabled me to have a working site on my localhost.</li>
+			<li id="pb">To get started with the index page, I used my code from the early stages of my portfolio website for the navigation and Banner.</li>
+			<br>
+			<div class="hoverOverImage">
+				<img src="earlyweb1.png" alt="Old Website" class="hoverOverImage-layer_bottom" id="conner_round">
+				<div class="hoverOverImage-layer_top">
+					<div class="hoverOverImage-text">My early website (March 2018) Nav bar and banner</div>
+				</div>
+			</div>
+			<hr>
+			<p id="pb">For the home page, I wanted tiles which had a picture, and when hovered over, the associated text for picturer would appear on top. These tiles were my second form of navigation, which allowed the user to navigate. </p>
+			<p id="pb">Learning how the <a href="https://www.w3schools.com/howto/howto_css_image_overlay.asp" id="pb" title="W3Schools"><u>hover overlay from W3Schools</u></a> works. I implemented the picture overlay for the home page.</p>
+			<p id="pb"><b id="bc">Problem:</b> The width of the picture overlay was the size of the picture or 100% of the width.</p>
+			<li id="pb">To make the picture overlay more user-friendly, I implemented a wrapper to centre the images and a 2 column responsive gallery. So on smaller devices, only one column would be shown as of a CSS media tag.</li>
+			<p id="pb">For my portfolio website, I also wanted a simple icon footer. This aesthetically pleasing for both web and mobile devices. I have seen some website using the <a href="https://www.w3schools.com/icons/fontawesome_icons_brand.asp" id="pb" title="W3Schools"><u>'Awesome Fonts'</u></a> icons for social media links. This meant I did not have download and worry about copyrights of the icons.</p>
+			<p id="pb"><b id="bc">Problem:</b> The code appeared to be correct, but the icons weren't showing up.</p>
+			<p id="pb"><b id="bc">Answer:</b> <b>Google it! </b>Whenever is have a problem in programming in Java or any other language, I often Google it and use <a href="https://stackoverflow.com/questions/24922833/fontawesome-icons-not-showing-why" id="pb" title="W3Schools"><u>'Stack Overflow'</u></a> because more than often someone else have likely to has the same problem. </p>
+			<li id="pb">I was missing the Awesome Fonts import statement. ( https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" )</li>
+			</br>
+			<div class="hoverOverImage">
+				<img src="SW/sw2.png" alt="Sports world home page" class="hoverOverImage-layer_bottom" id="conner_round">
+				<div class="hoverOverImage-layer_top">
+					<div class="hoverOverImage-text">The home page for the sports world, with picture overlay text</div>
+				</div>
+			</div>
+			<hr>
+			<p id="pb"><b id="bc">Failure:</b> 
+				Having used Angular JS, I was confident that I could easily have many shows and hidden panels for some added functionality for the content on the other pages. As eager as I am to learn, I had realised that changing the visibility state of for the panels was not going to work with JavaScript. 
+			</p>
+			<p id="pb">I came to release that Angular JS is made for single page web applications, while Javascript was able to handle much more straightforward events. </p>
+			<h3 class="w">Day 2</h3>
+			<p id="pb">The Second day started by cleaning up the code from the previous day and commenting where necessary or have left out.</p>
+			<h2 >Rugby Page</h2>
+			<ol>
+				<li id="pb">Implementing the banner from my portfolio and changing the images and heading text. </li>
+				<li id="pb">Have a comment section on the rugby page for a recent game. </li>
+				<li id="pb">Implementing media and gallery for the game. </li>
+				<li id="pb">Using Javascript, Implementing a quiz based on a match. </li>
+				<li id="pb">Implementing a team supporter, change background colour/image function. </li>
+			</ol>
+			<h3>Learning PHP and connecting to SQL</h3>
+			<p id="pb">Creating a table</p>
+			<li id="pb">CREATE TABLE 'Comments' (
+				'name' text,
+				'comment' text,
+				'email' text);
+			</li>
+			<br>
+			<div class="hoverOverImage">
+				<img src="SW/rugbyphp.png" alt="Sports world home page" class="hoverOverImage-layer_bottom" id="conner_round">
+				<div class="hoverOverImage-layer_top">
+					<div class="hoverOverImage-text">PHP code to post and receive comments from MariaDB</div>
+				</div>
+			</div>
+			<p id="pb">When connecting to the databases, the user namer, passwords and databases name is required.</p>
+			<p id="pb">Using echo to print error when testing the web-application</p>
+			<div class="hoverOverImage">
+				<img src="SW/rugbyphp1.png" alt="Sports world home page" class="hoverOverImage-layer_bottom" id="conner_round" style="max-width:600px">
+				<div class="hoverOverImage-layer_top">
+					<div class="hoverOverImage-text">PHP to display the game comments in a table </div>
+				</div>
+			</div>
+			<div class="hoverOverImage">
+				<img src="SW/rugby.jpg" alt="Sports world home page" class="hoverOverImage-layer_bottom" id="conner_round" style="width:100%">
+				<div class="hoverOverImage-layer_top">
+					<div class="hoverOverImage-text">Rugby Web-page, with a comment sections </div>
+				</div>
+			</div>
+			<hr>
+			<h3>Rugby page Javascript</h3>
+			<ol id="pb">
+				<li>The rugby web-page is full javascript features. </p> 
+					To validate comment which is submitted. The user must input a name and a valid email to submit the post the commenting panel. Otherwise, they will be altered.
+				</li>
+				<li>The user can choose to support their favourite and click on a button which will change the background colour or theme image.</li>
+				<li>The last javascript element I have implemented for the rugby page is a quiz which asks the user to guess the number of tries by the All Blacks in a game. If the input is lower than the answer, the user would be alerted for guessing lower, and if they are one off the solution, they would be alerted that the answer is close. If the answer is correct then they would be alerted answer is correct. </li>
+			</ol>
+			<h3 class="w">Day 3</h3>
+			<p id="pb">The last day assigned for this project. The soccer, cricket and login page was still to be completed.</p>
+			<h2 >Requirements for the last day.</h2>
+			<ol>
+				<li id="pb">Making a login system which can register new users to the database.</li>
+				<br>
+				<div class="hoverOverImage">
+					<img src="SW/swReg.jpeg" alt="New User signs up page" class="hoverOverImage-layer_bottom" id="conner_round" style="width:100%">
+					<div class="hoverOverImage-layer_top">
+						<div class="hoverOverImage-text">New User sign up page  </div>
+					</div>
+				</div>
+				<p id="pb">New User sign up page Inserts into SQL databases the user details.</p>
+				<hr>
+				<li id="pb">Secondly using the new user details from the new user to log in. </li>
+				<br>
+				<div class="hoverOverImage">
+					<img src="SW/swlogin.jpeg" alt="Login page for existing users" class="hoverOverImage-layer_bottom" id="conner_round" style="width:100%">
+					<div class="hoverOverImage-layer_top">
+						<div class="hoverOverImage-text">Login page for existing users</div>
+					</div>
+				</div>
+				<p id="pb">Login page for existing users. The Login details will be compared to the SQL table to see if there is a matching username and password and either the user will receive a feedback message or is redirected to the next page. </p>
+				<div class="hoverOverImage">
+					<img src="SW/loginphp.png" alt="Sample PHP code" class="hoverOverImage-layer_bottom" id="conner_round" style="width:100%">
+					<div class="hoverOverImage-layer_top">
+						<div class="hoverOverImage-text">Sample PHP code for the login</div>
+					</div>
+				</div>
+				<hr>
+				<li id="pb">A forgotten password page, enable the user to input the user email, to retrieve instruction to recover or set a new email. </li>
+				<br>
+				<div class="hoverOverImage">
+					<img src="SW/swforget.jpeg" alt="forgotten password page" class="hoverOverImage-layer_bottom" id="conner_round" style="width:100%">
+					<div class="hoverOverImage-layer_top">
+						<div class="hoverOverImage-text">Forgotten password Form</div>
+					</div>
+				</div>
+				<hr>
+				<li id="pb">Building a page which the user would be redirected to for a successful login. </li>
+				<br>
+				<div class="hoverOverImage">
+					<img src="SW/swcs.jpeg" alt="Redirected for login user" class="hoverOverImage-layer_bottom" id="conner_round" style="width:100%">
+					<div class="hoverOverImage-layer_top">
+						<div class="hoverOverImage-text">Redirected for login user</div>
+					</div>
+				</div>
+				<hr>
+				<li id="pb">For the Soccer web-page, just using javascript to change text and colour of the font.</li>
+				<br>
+				<div class="hoverOverImage">
+					<img src="SW/swso.jpeg" alt="Redirected for login user" class="hoverOverImage-layer_bottom" id="conner_round" style="width:100%">
+					<div class="hoverOverImage-layer_top">
+						<div class="hoverOverImage-text">Soccer web-page</div>
+					</div>
+				</div>
+				<hr>
+				<li id="pb">The Cricket page to implement a blogging system. </li>
+				<br>
+				<div class="hoverOverImage">
+					<img src="SW/swcri.jpeg" alt="Redirected for login user" class="hoverOverImage-layer_bottom" id="conner_round" style="width:100%">
+					<div class="hoverOverImage-layer_top">
+						<div class="hoverOverImage-text">The Cricket page.</div>
+					</div>
+				</div>
+				<p id="pb">I was unable to do the blogging system work with a just a 'txt' file rather than an SQL database. I have several years of SQL at this point, so this was easier for me.  </p>
+				<hr>
+			</ol>
+			<h2 class="w">Coming soon...</h2>
+			<p id="pb"></p>
+		</div>
+		<br>
+		</div>
+		<a href="#"><i id="fixedbacktotop" class="fa fa-chevron-circle-up" style="font-size:48px;color:#0F78C3"></i></a>
+		<!-- footer ------------------------------>
+		<footer class="footer">
+			<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
+			<div class="container text-center">
+				<a href="https://www.linkedin.com/in/smeet-patel-/"><i class="fa fa-linkedin-square"></i></a>
+				<a href="https://github.com/smeet-patel"><i class="fa fa-github"></i></a>
+				<a href="mailto:smeetprpatel@gmail.com?Subject=Mail%20from%20Website" target="_top"><i class="fa fa-envelope"></i></a>
+				<a href="https://goo.gl/maps/fReyXVpdCDB2"><i class="fa fa-map-marker"></i></a>
+			</div>
+		</footer>
+	</body>
+</html>
