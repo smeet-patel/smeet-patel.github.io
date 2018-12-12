@@ -44,6 +44,22 @@ p,
     margin: auto;
 }
 
+#butproto:link, #butproto:visited {
+    background-color: #0F78C3;
+    border-radius: 15px;
+    color: #F0EF99;
+    padding: 14px 25px;
+    width: 50%;
+    text-align: center;
+    text-decoration: none;
+    margin:auto;
+    display:block;
+  }
+  
+  
+#butproto:hover, #butproto:active {
+    background-color: rgba(15, 120, 195, 0.7);
+  }
 /* =============== NAV BAR CODE ===============*/
 .nav1 {
     overflow: hidden;
