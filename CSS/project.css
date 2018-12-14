@@ -356,6 +356,17 @@ nav.shift ul li a:hover:after {
     border-radius: 10px;
 }
 
+.w2 {
+    color: white;
+    background-color: #0F78C3;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: lighter;
+    padding: 10px;
+    font-size: calc(1.5vw + 8px);
+    border-radius: 10px;
+}
+
 /* image 2 col */
 .centerWrap {
     width: 80%;
@@ -463,7 +474,7 @@ nav.shift ul li a:hover:after {
 
 .video-container {
     position: relative;
-    padding-bottom: 56.25%;
+    padding-bottom: 71%;
     padding-top: 30px; height: 0; overflow: hidden;
     }
     
@@ -479,3 +490,23 @@ nav.shift ul li a:hover:after {
     max-height: 500px;
     text-align: center; */
     }
+
+    .iframe-container {
+        overflow: hidden;
+        padding-top: 140%;
+        position: relative;
+      }
+      
+      .iframe-container iframe {
+         border: 0;
+         height: 140%;
+         left: 0;
+         position: absolute;
+         top: -20%;
+         width: 100%;
+      }
+      
+      /* 4x3 Aspect Ratio */
+      .iframe-container-4x3 {
+        padding-top: 75%;
+      }
