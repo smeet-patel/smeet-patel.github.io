@@ -480,7 +480,9 @@ nav.shift ul li a:hover:after {
     
     .video-container iframe,
     .video-container object,
-    .video-container embed {
+    .video-container embed,.video-container1 iframe,
+    .video-container1 object,
+    .video-container1 embed  {
     position: absolute;
     top: 0;
     left: 0;
@@ -490,6 +492,12 @@ nav.shift ul li a:hover:after {
     max-height: 500px;
     text-align: center; */
     }
+
+    .video-container1 {
+        position: relative;
+        padding-bottom: 57%;
+        padding-top: 30px; height: 0; overflow: hidden;
+        }
 
     .iframe-container {
         overflow: hidden;
