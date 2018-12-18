@@ -514,5 +514,11 @@ nav.shift ul li a:hover:after {
          top: 0;
          width: 100%;
       }
+
+      video {
+        width: 100%;
+        height: auto;
+        border-radius: 15px;
+      }
       
    
