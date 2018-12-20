@@ -16,3 +16,13 @@ function myFunction1() {
   var scrolled = (winScroll / height) * 100;
   document.getElementById("myBar").style.width = scrolled + "%";
 }
+
+function mel() {
+    document.getElementById("melBlog").style.display = "block";
+    document.getElementById("baliBlog").style.display = "none";
+  }
+
+  function bali() {
+    document.getElementById("melBlog").style.display = "none";
+    document.getElementById("baliBlog").style.display = "block";
+  }
