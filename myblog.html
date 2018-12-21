@@ -35,7 +35,7 @@
         <!-- <div class="mar"></div> -->
         <nav class="shift">
             <ul>
-                <li><a href="#"  onclick="bali()" >Traveler Guide</a></li>
+                <li><a href="#" onclick="bali()">Traveler Guide</a></li>
                 <!-- <li><a href="#loadblog" onclick="mel()" class="pronav">Melbourne</a></li> -->
                 <li><a href="https://smeet-patel.github.io/Launchpadreview.html" title="Agile UX Designer Influence">Launchpad</a></li>
                 <!-- <li><a href="#dev">Development</a></li> -->
@@ -46,7 +46,7 @@
             <div class="progress-bar" id="myBar">
 
             </div>
-        </div> 
+        </div>
     </div>
     <!-- Contact me buttons ------------------------------>
     <div class="centerWrap">
@@ -54,9 +54,10 @@
         <div id="map"></div>
         <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d305263.6855162783!2d115.12602790215035!3d-8.496069224919468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd23d739f22c9c3%3A0x54a38afd6b773d1c!2sUbud%2C+Gianyar%2C+Bali%2C+Indonesia!5e1!3m2!1sen!2snz!4v1544684952370"
             frameborder="0" style="border:0; width: 100%; min-height: 400px; border-radius: 15px;" allowfullscreen></iframe> -->
-        <p style="color: orange" id="loadblog">Click on the map to activate blog. Where next? Udaipur, Singapore or Otago
+        <p style="color: orange" id="loadblog">Click on the map to activate blog. Where next? Udaipur, Singapore or
+            Otago
             region?</p>
-            <!-- <p id="demo">A Paragraph</p> -->
+        <!-- <p id="demo">A Paragraph</p> -->
     </div>
     <div class="centerWrap" id="baliBlog">
         <!-- <br> -->
@@ -127,7 +128,17 @@
         </div>
     </footer>
     <script type="text/javascript">
-    
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 2.5,
+                center: {
+                    lat: -12.46044,
+                    lng: 130.8410469
+                }
+            });
+            setMarkers(map);
+        }
+
         var locations = [
             ['Wellington (New Zealand)', -41.2924322, 174.7788891, 5, 'wel'],
             ['Singapore', 1.2756818, 103.8546165, 4, 'sing'],
@@ -135,42 +146,63 @@
             ['Melbourne (Australia)', -37.8142176, 144.9631608, 2, 'mel'],
             ['Ubud (Indonesia)', -8.5080922, 115.2639576, 1, 'ubud']
         ];
-
-        var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 2.5,
-            center: {
-                lat: -12.46044,
-                lng: 130.8410469
-            },
-            mapTypeId: google.maps.MapTypeId.ROADMAP
-        });
+        // Shapes define the clickable region of the icon. The type defines an HTML
+        // <area> element 'poly' which traces out a polygon as a series of X,Y points.
+        // The final coordinate closes the poly by connecting to the first coordinate.
+        function setMarkers(map) {
+        var shape = {
+          coords: [1, 1, 1, 20, 18, 20, 18, 1],
+          type: 'poly'
+        };
+        // var map = new google.maps.Map(document.getElementById('map'), {
+        //     zoom: 2.5,
+        //     center: {
+        //         lat: -12.46044,
+        //         lng: 130.8410469
+        //     },
+        //     mapTypeId: google.maps.MapTypeId.ROADMAP
+        // });
 
         var infowindow = new google.maps.InfoWindow();
 
         var marker, i;
 
-        for (i = 0; i < locations.length; i++) {
-            marker = new google.maps.Marker({
-                position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-                map: map
-            });
+        // for (i = 0; i < locations.length; i++) {
+        //     marker = new google.maps.Marker({
+        //         position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+        //         map: map
+        //     });
+        for (var i = 0; i < locations.length; i++) {
+        //   var beach = beaches[i];
+          var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+            map: map,
+            // icon: 'http://maps.google.com/mapfiles/ms/icons/blue-pushpin.png',
+            shape: shape,
+            title: locations[0],
+            zIndex: locations[3]
+          });
+        
+            
 
             google.maps.event.addListener(marker, 'click', (function (marker, i) {
                 return function () {
                     infowindow.setContent(locations[i][0]);
                     infowindow.open(map, marker);
                     // document.getElementById("demo").innerHTML = locations[i][4];
-                    if ((locations[i][4]== 'mel')) {
+                    if ((locations[i][4] == 'mel')) {
                         document.getElementById("melBlog").style.display = "block";
                         document.getElementById("baliBlog").style.display = "none";
-                    }
-                    else if ((locations[i][4] == 'ubud')) {
+                    } else if ((locations[i][4] == 'ubud')) {
                         document.getElementById("melBlog").style.display = "none";
                         document.getElementById("baliBlog").style.display = "block";
                     }
                 }
             })(marker, i));
         }
+    }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYNYcccCa4JnUmOlg_Aq7gpDymQLi0f3Q&callback=initMap">
     </script>
 </body>
 
