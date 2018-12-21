@@ -26,3 +26,5 @@ function mel() {
     document.getElementById("melBlog").style.display = "none";
     document.getElementById("baliBlog").style.display = "block";
   }
+
+  

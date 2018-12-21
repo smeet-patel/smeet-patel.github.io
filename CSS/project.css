@@ -521,4 +521,10 @@ nav.shift ul li a:hover:after {
         border-radius: 15px;
       }
       
-   
+   /* Blog map */
+   #map {
+    min-height: 400px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
