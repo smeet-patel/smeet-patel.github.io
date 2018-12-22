@@ -44,7 +44,8 @@ p,
     margin: auto;
 }
 
-#butproto:link, #butproto:visited {
+#butproto:link,
+#butproto:visited {
     background-color: #0F78C3;
     border-radius: 15px;
     color: #F0EF99;
@@ -52,14 +53,16 @@ p,
     width: 50%;
     text-align: center;
     text-decoration: none;
-    margin:auto;
-    display:block;
-  }
-  
-  
-#butproto:hover, #butproto:active {
+    margin: auto;
+    display: block;
+}
+
+
+#butproto:hover,
+#butproto:active {
     background-color: rgba(15, 120, 195, 0.7);
-  }
+}
+
 /* =============== NAV BAR CODE ===============*/
 .nav1 {
     overflow: hidden;
@@ -335,7 +338,8 @@ nav.shift ul li a:after {
     visibility: none;
     opacity: 0;
     z-index: -1;
-    margin: 0;padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 nav.shift ul li a:hover:after {
@@ -344,8 +348,9 @@ nav.shift ul li a:hover:after {
     height: 100%;
 }
 
-/*header*/
-.w {
+/* ---------- header for sections ----------- */
+.w,
+.w2 {
     color: white;
     background-color: #0F78C3;
     text-align: center;
@@ -357,17 +362,10 @@ nav.shift ul li a:hover:after {
 }
 
 .w2 {
-    color: white;
-    background-color: #0F78C3;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: lighter;
-    padding: 10px;
     font-size: calc(1.5vw + 8px);
-    border-radius: 10px;
 }
 
-/* image 2 col */
+/* ----------- content side margins ---------- */
 .centerWrap {
     width: 80%;
     margin: auto;
@@ -376,7 +374,7 @@ nav.shift ul li a:hover:after {
     margin: auto;
 }
 
-/**changed from my web gallery**/
+/**--------- changed from my web gallery ----------**/
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -397,6 +395,7 @@ nav.shift ul li a:hover:after {
     vertical-align: middle;
 }
 
+/**--------- Hover over image css ----------**/
 .hoverOverImage * {
     box-sizing: border-box;
 }
@@ -468,21 +467,26 @@ nav.shift ul li a:hover:after {
     display: block;
 }
 
+/* --------- rounding conners --------- */
 #conner_round {
     border-radius: 10px;
 }
 
+/* -------- resonsive video ----------- */
 .video-container {
     position: relative;
     padding-bottom: 71%;
-    padding-top: 30px; height: 0; overflow: hidden;
-    }
-    
-    .video-container iframe,
-    .video-container object,
-    .video-container embed,.video-container1 iframe,
-    .video-container1 object,
-    .video-container1 embed  {
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed,
+.video-container1 iframe,
+.video-container1 object,
+.video-container1 embed {
     position: absolute;
     top: 0;
     left: 0;
@@ -491,38 +495,40 @@ nav.shift ul li a:hover:after {
     /* max-width: 800px;
     max-height: 500px;
     text-align: center; */
-    }
+}
 
-    .video-container1 {
-        position: relative;
-        padding-bottom: 57%;
-        padding-top: 30px; height: 0; overflow: hidden;
-        }
+.video-container1 {
+    position: relative;
+    padding-bottom: 57%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
 
-    .iframe-container {
-        overflow: hidden;
-        padding-top: 100%;
-        margin-right: auto;
-        position: relative;
-      }
-      
-      .iframe-container iframe {
-         border: 0;
-         height: 100%;
-         left: 0;
-         position: absolute;
-         top: 0;
-         width: 100%;
-      }
+.iframe-container {
+    overflow: hidden;
+    padding-top: 100%;
+    margin-right: auto;
+    position: relative;
+}
 
-      video {
-        width: 100%;
-        height: auto;
-        border-radius: 15px;
-      }
-      
-   /* Blog map */
-   #map {
+.iframe-container iframe {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+/* -------- Blog map (Rounded conners) ---------- */
+#map {
     min-height: 400px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;

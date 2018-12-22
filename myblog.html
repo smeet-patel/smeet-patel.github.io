@@ -3,7 +3,8 @@
 
 <head>
     <title>Dimmu Burger | Project</title>
-    <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+    <!-- devloper mode without api count -->
+    <!-- <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script> -->
     <!-- Stylesheets ------------------------------>
     <link rel="stylesheet" type="text/css" href="CSS/project.css">
     <!-- My my mini icon ------------------------------>
@@ -11,8 +12,6 @@
     <!-- Make the scale of screen to 1 to device ------------------------------>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<script type="text/javascript" src="Smeetjavascript.js"></script>
 </head>
 
 <body>
@@ -30,60 +29,63 @@
     <img src="blog/blogBanner.png" alt="blog" class="cenBanner">
     <img src="blog/squareblogbanner.png" alt="blog" class="cenBannersquare">
     <div id="overview"></div>
-    <!-- Contact me buttons ------------------------------>
+    <!-- sticky nav with options ------------------------------>
     <div class="sticky">
-        <!-- <div class="mar"></div> -->
         <nav class="shift">
             <ul>
                 <li><a href="#" onclick="bali()">Traveler Guide</a></li>
                 <!-- <li><a href="#loadblog" onclick="mel()" class="pronav">Melbourne</a></li> -->
                 <li><a href="https://smeet-patel.github.io/Launchpadreview.html" title="Agile UX Designer Influence">Launchpad</a></li>
-                <!-- <li><a href="#dev">Development</a></li> -->
-                <!-- <li><a href="#">Reflection</a></li> -->
             </ul>
         </nav>
+        <!-- the blue progress line -->
         <div class="progress-container">
             <div class="progress-bar" id="myBar">
-
             </div>
         </div>
     </div>
-    <!-- Contact me buttons ------------------------------>
+    <!-- Map and instructions ------------------------------>
     <div class="centerWrap">
         <h1 class="w">Traveler Guide</h1>
         <div id="map"></div>
         <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d305263.6855162783!2d115.12602790215035!3d-8.496069224919468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd23d739f22c9c3%3A0x54a38afd6b773d1c!2sUbud%2C+Gianyar%2C+Bali%2C+Indonesia!5e1!3m2!1sen!2snz!4v1544684952370"
-            frameborder="0" style="border:0; width: 100%; min-height: 400px; border-radius: 15px;" allowfullscreen></iframe> -->
+				frameborder="0" style="border:0; width: 100%; min-height: 400px; border-radius: 15px;" allowfullscreen></iframe> -->
         <p style="color: orange" id="loadblog">Click on the map to activate blog. Where next? Udaipur, Singapore or
             Otago
-            region?</p>
-        <!-- <p id="demo">A Paragraph</p> -->
+            region?
+        </p>
+        <!-- <p id="demo">Testing purposes</p> -->
     </div>
+    <!-- Bali blog -->
     <div class="centerWrap" id="baliBlog">
-        <!-- <br> -->
         <h1 class="w">Ubud, Bali, Indonesia</h1>
         <p>Ubud - famous for being the setting of the ‘love’ segment of the best-selling memoir, Eat Pray Love, Ubud is
             often referred to as the ‘Cultural Heart of Bali’. For some Ubud acts as a place of spiritual awakening,
             for some it is a get away from the charged atmosphere of South Bali and for others it is the one place in
             the world that convinced them to turn away from their western lifestyles and turn a stay of a couple of
-            days into months or years. </p>
+            days into months or years.
+        </p>
         <img src="blog/p39.jpg" alt="rice feilds" class="cenimg" style="max-width: 800px"><br>
         <p>The green terraced hills of Ubud are a cocktail of traditional Balinese Culture, yoga, elaborate vegan
             delicacies, beautiful temples infused with royalty. We enjoyed the food, the cultural shows, the temples
             and more importantly the hospitality offered by the locals. In contrast to South Bali which is hosted by
             slightly aggressive, Ubud, is home to Balinese people who are some of the friendliest individuals you would
-            meet around the region. </p>
+            meet around the region.
+        </p>
         <p>While travelling through Bali, Ubud is the ideal base to explore central, northern and eastern parts of
             Bali. It allows for you to get away from the touristy vibe and experience Bali for what it traditionally
-            represents. </p>
+            represents.
+        </p>
         <img src="blog/p35.jpg" alt="rice feilds" class="cenimg" style="max-width: 800px"><br>
         <p><b>Food specialities: </b> Vegan delicacies, detox drinks, cheap cocktails</p>
         <p><b>Attractions: </b> Monkey Forest Sanctuary, Tegallalang rice fields, Yoga centers, massage spas, art
-            markets, cultural shows </p>
+            markets, cultural shows
+        </p>
         <p><b>Tips: </b>Always bargain – don’t let the over friendliness fool you (start 20-25% of the proposed price),
-            talk to locals and hire a car + driver for the whole day, the food is worth the money</p>
+            talk to locals and hire a car + driver for the whole day, the food is worth the money
+        </p>
     </div>
-
+    <!-- Melbourne blog -->
     <div class="centerWrap" id="melBlog" style="display: none;">
         <!-- <br> -->
         <h1 class="w">Melbourne, Australia</h1>
@@ -94,7 +96,8 @@
             largest Italian population outside of Italy, is home to the third largest Greek speaking city based
             population globally and the large Vietnamese influx was reflected by Nyugen being the second most common
             surname in Melbourne’s phone book. The cultural diversity spills over in the quality diverse restaurants
-            which are dispersed between the hipster cafes which are home for the world-famous Melbourne coffee. </p>
+            which are dispersed between the hipster cafes which are home for the world-famous Melbourne coffee.
+        </p>
         <img src="blog/mel1.jpeg" alt="Melbourne" class="cenimg" style="max-width: 800px"><br>
         <p>Over the course of three days we focused on getting to experience Melbourne like a local as much as
             possible. The frequency of public transport helped us to travel to the nearby suburbs of St. Kilda and
@@ -103,19 +106,18 @@
             could walk along the beautiful Yarra River, past the Flinders station on the way to the historical MCG to
             watch Melbourne Football Club take apart the opposition in a game of Aussie Rules. As all cities have their
             strengths and weaknesses, the three days helped me conclude why year in year out Melbourne is awarded the
-            title of “The World’s Most Livable City”. </p>
+            title of “The World’s Most Livable City”.
+        </p>
         <img src="b1.jpg" alt="rice feilds" class="cenimg" style="max-width: 800px"><br>
         <p><b>Food specialities: </b> world famous Coffee, multi-cultural cuisine and rooftop bar hopping</p>
         <p><b>Attractions: </b> Catch a sports game at the MCG, walk around the CBD and don’t miss the alleyways
             littered with street art, walk along the Yarra river and take in Melbourne come to life at night and watch
-            the sunset over Melbourne from St. Kilda after marveling the Brighton Bathing boxes. </p>
+            the sunset over Melbourne from St. Kilda after marveling the Brighton Bathing boxes.
+        </p>
         <p><b>Tips: </b>Catch Skybus from and to Airport, the expensive eateries aren’t always the best, walk or catch
-            the tram around the CBD</p>
+            the tram around the CBD
+        </p>
     </div>
-
-
-
-
     <br>
     <!-- footer ------------------------------>
     <footer class="footer">
@@ -127,83 +129,11 @@
             <a href="https://goo.gl/maps/fReyXVpdCDB2"><i class="fa fa-map-marker"></i></a>
         </div>
     </footer>
-    <script type="text/javascript">
-        function initMap() {
-            var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 2.5,
-                center: {
-                    lat: -12.46044,
-                    lng: 130.8410469
-                }
-            });
-            setMarkers(map);
-        }
-
-        var locations = [
-            ['Wellington (New Zealand)', -41.2924322, 174.7788891, 5, 'wel'],
-            ['Singapore', 1.2756818, 103.8546165, 4, 'sing'],
-            ['Udaipur (India)', 24.5787228, 73.6862551, 3, 'udai'],
-            ['Melbourne (Australia)', -37.8142176, 144.9631608, 2, 'mel'],
-            ['Ubud (Indonesia)', -8.5080922, 115.2639576, 1, 'ubud']
-        ];
-        // Shapes define the clickable region of the icon. The type defines an HTML
-        // <area> element 'poly' which traces out a polygon as a series of X,Y points.
-        // The final coordinate closes the poly by connecting to the first coordinate.
-        function setMarkers(map) {
-        var shape = {
-          coords: [1, 1, 1, 20, 18, 20, 18, 1],
-          type: 'poly'
-        };
-        // var map = new google.maps.Map(document.getElementById('map'), {
-        //     zoom: 2.5,
-        //     center: {
-        //         lat: -12.46044,
-        //         lng: 130.8410469
-        //     },
-        //     mapTypeId: google.maps.MapTypeId.ROADMAP
-        // });
-
-        var infowindow = new google.maps.InfoWindow();
-
-        var marker, i;
-
-        // for (i = 0; i < locations.length; i++) {
-        //     marker = new google.maps.Marker({
-        //         position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-        //         map: map
-        //     });
-        for (var i = 0; i < locations.length; i++) {
-        //   var beach = beaches[i];
-          var marker = new google.maps.Marker({
-            position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-            map: map,
-            // icon: 'http://maps.google.com/mapfiles/ms/icons/blue-pushpin.png',
-            shape: shape,
-            title: locations[0],
-            zIndex: locations[3]
-          });
-        
-            
-
-            google.maps.event.addListener(marker, 'click', (function (marker, i) {
-                return function () {
-                    infowindow.setContent(locations[i][0]);
-                    infowindow.open(map, marker);
-                    // document.getElementById("demo").innerHTML = locations[i][4];
-                    if ((locations[i][4] == 'mel')) {
-                        document.getElementById("melBlog").style.display = "block";
-                        document.getElementById("baliBlog").style.display = "none";
-                    } else if ((locations[i][4] == 'ubud')) {
-                        document.getElementById("melBlog").style.display = "none";
-                        document.getElementById("baliBlog").style.display = "block";
-                    }
-                }
-            })(marker, i));
-        }
-    }
-    </script>
+    <!-- script and map -->
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYNYcccCa4JnUmOlg_Aq7gpDymQLi0f3Q&callback=initMap">
     </script>
+    <script type="text/javascript" src="Javascript/Smeetjavascript.js"></script>
+    <script type="text/javascript" src="Javascript/map.js"></script>
 </body>
 
 </html>
