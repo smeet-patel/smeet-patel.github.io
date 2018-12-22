@@ -10,6 +10,7 @@ function initMap() {
     mapTypeId: google.maps.MapTypeId.ROADMAP
 }
 
+
 var locations = [
     ['Wellington (New Zealand)', -41.2924322, 174.7788891, 5, 'wel'],
     ['Singapore', 1.2756818, 103.8546165, 4, 'sing'],
@@ -37,6 +38,7 @@ function setMarkers(map) {
     var infowindow = new google.maps.InfoWindow();
 
     var marker, i;
+    var markerCluster = new MarkerClusterer(map, marker,{imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
 
     // for (i = 0; i < locations.length; i++) {
     //     marker = new google.maps.Marker({
@@ -51,8 +53,12 @@ function setMarkers(map) {
             // icon: 'http://maps.google.com/mapfiles/ms/icons/blue-pushpin.png',
             shape: shape,
             title: locations[0],
-            zIndex: locations[3]
+            zIndex: locations[3],
+            // icon : "spMini1.png"
         });
+        markerCluster.addMarker(marker);
+        
+        
 
         google.maps.event.addListener(marker, 'click', (function (marker, i) {
             return function () {
