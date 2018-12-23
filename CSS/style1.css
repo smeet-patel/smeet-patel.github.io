@@ -1,4 +1,4 @@
-/*-----------------------------------------------------------*/
+/*---------------------------- projects overview -------------------------------*/
 card {
     font-size: 1.6em;
     line-height: 1.6;
@@ -242,18 +242,20 @@ a:hover {
 .lbl-toggle {
     display: block;
     color: white;
-    font-family: "Myriad Pro", sans-serif;
+    /* font-family: "Myriad Pro", sans-serif; */
     background-color: #0F78C3;
     text-align: center;
-    font-style: italic;
-    padding: 10px;
+    /* font-style: italic; */
+    padding: 5px;
     border-radius: 10px;
     text-align: center;
-    font-size: 1.5em;
-    margin: .5em 0;
-    font-weight: bold;
+    margin: .3em 0;
+    /* font-weight: bold; */
     cursor: pointer;
     transition: all 0.25s ease-out;
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: calc(2vw + 10px);
 }
 
 .lbl-toggle:hover {
@@ -301,7 +303,7 @@ input[type='checkbox'] {
     border-bottom-left-radius: 0;
 }
 
-/*-------------------------------------------------------------*/
+/*----------------------------Replace soon Once old project have been replaced ---------------------------------*/
 .btn {
     text-align: center;
     font-family: "Myriad Pro", sans-serif;

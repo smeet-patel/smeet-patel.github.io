@@ -2,9 +2,77 @@ function initMap() {
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 2.5,
         center: {
-            lat: -12.46044,
+            lat: -10.46044,
             lng: 130.8410469
-        }
+        },
+        styles: [
+    
+            {
+              featureType: 'administrative.locality',
+              elementType: 'labels.text.fill',
+              stylers: [{
+                "saturation": 36
+            },
+            {
+                "color": "#c35a0f"
+            },
+            {
+                "lightness": 40
+            }]
+            },
+            
+            {
+              featureType: 'road',
+              elementType: 'labels.text.fill',
+              stylers: [{
+                "saturation": 36
+            },
+            {
+                "color": "#2ab4a6"
+            },
+            {
+                "lightness": 40
+            }]
+            },
+            {
+                "featureType": "administrative.country",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                  {
+                    "color": "#0f78c3"
+                  }
+                ]
+              },
+              {
+                "featureType": "administrative.country",
+                "elementType": "labels.text.stroke",
+                "stylers": [
+                  {
+                    "weight": 2.5
+                  }
+                ]
+              },
+            {
+                "featureType": "water",
+                "elementType": "geometry.fill",
+                "stylers": [
+                  {
+                    "color": "#7fc8ed"
+                  }
+                ]
+              },
+              {
+                "featureType": "water",
+                "elementType": "labels.text",
+                "stylers": [
+                  {
+                    "color": "#ffffff"
+                  }
+                ]
+              }
+            
+          ]
+
     });
     setMarkers(map);
     mapTypeId: google.maps.MapTypeId.ROADMAP

@@ -384,7 +384,7 @@ nav.shift ul li a:hover:after {
 /* Create two equal columns that sits next to each other */
 .column {
     flex: 49%;
-    max-width: 49%;
+    /* max-width: 49%; */
     padding: 0 4px;
     display: block;
     margin-left: auto;
@@ -406,6 +406,7 @@ nav.shift ul li a:hover:after {
     overflow: hidden;
     max-width: 100%;
     height: auto;
+    margin: 1vw;
 }
 
 .hoverOverImage img {
