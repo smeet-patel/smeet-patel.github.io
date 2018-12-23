@@ -6,72 +6,66 @@ function initMap() {
             lng: 130.8410469
         },
         styles: [
-    
+
             {
-              featureType: 'administrative.locality',
-              elementType: 'labels.text.fill',
-              stylers: [{
-                "saturation": 36
+                featureType: 'administrative.locality',
+                elementType: 'labels.text.fill',
+                stylers: [{
+                        "saturation": 36
+                    },
+                    {
+                        "color": "#c35a0f"
+                    },
+                    {
+                        "lightness": 40
+                    }
+                ]
             },
+
             {
-                "color": "#c35a0f"
-            },
-            {
-                "lightness": 40
-            }]
-            },
-            
-            {
-              featureType: 'road',
-              elementType: 'labels.text.fill',
-              stylers: [{
-                "saturation": 36
-            },
-            {
-                "color": "#2ab4a6"
-            },
-            {
-                "lightness": 40
-            }]
+                featureType: 'road',
+                elementType: 'labels.text.fill',
+                stylers: [{
+                        "saturation": 36
+                    },
+                    {
+                        "color": "#2ab4a6"
+                    },
+                    {
+                        "lightness": 40
+                    }
+                ]
             },
             {
                 "featureType": "administrative.country",
                 "elementType": "labels.text.fill",
-                "stylers": [
-                  {
+                "stylers": [{
                     "color": "#0f78c3"
-                  }
-                ]
-              },
-              {
+                }]
+            },
+            {
                 "featureType": "administrative.country",
                 "elementType": "labels.text.stroke",
-                "stylers": [
-                  {
+                "stylers": [{
                     "weight": 2.5
-                  }
-                ]
-              },
+                }]
+            },
             {
                 "featureType": "water",
                 "elementType": "geometry.fill",
-                "stylers": [
-                  {
+                "stylers": [{
                     "color": "#7fc8ed"
-                  }
-                ]
-              },
-              {
+                }]
+            },
+            {
                 "featureType": "water",
                 "elementType": "labels.text",
-                "stylers": [
-                  {
+                "stylers": [{
                     "color": "#ffffff"
-                  }
-                ]
-              }
-            
-          ]
+                }]
+            }
+
+        ]
 
     });
     setMarkers(map);
@@ -106,7 +100,9 @@ function setMarkers(map) {
     var infowindow = new google.maps.InfoWindow();
 
     var marker, i;
-    var markerCluster = new MarkerClusterer(map, marker,{imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+    var markerCluster = new MarkerClusterer(map, marker, {
+        imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
+    });
 
     // for (i = 0; i < locations.length; i++) {
     //     marker = new google.maps.Marker({
@@ -125,8 +121,8 @@ function setMarkers(map) {
             // icon : "spMini1.png"
         });
         markerCluster.addMarker(marker);
-        
-        
+
+
 
         google.maps.event.addListener(marker, 'click', (function (marker, i) {
             return function () {
@@ -135,11 +131,18 @@ function setMarkers(map) {
                 // document.getElementById("demo").innerHTML = locations[i][4];
                 if ((locations[i][4] == 'mel')) {
                     document.getElementById("melBlog").style.display = "block";
+                    document.getElementById("singBlog").style.display = "none";
                     document.getElementById("baliBlog").style.display = "none";
                 } else if ((locations[i][4] == 'ubud')) {
                     document.getElementById("melBlog").style.display = "none";
+                    document.getElementById("singBlog").style.display = "none";
                     document.getElementById("baliBlog").style.display = "block";
                 }
+             else if ((locations[i][4] == 'sing')) {
+                document.getElementById("melBlog").style.display = "none";
+                document.getElementById("singBlog").style.display = "block";
+                document.getElementById("baliBlog").style.display = "none";
+            }
             }
         })(marker, i));
     }
