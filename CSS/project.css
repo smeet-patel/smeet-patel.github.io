@@ -19,6 +19,10 @@ p,
     color: #555;
 }
 
+#clickblog{
+    text-align: center;
+}
+
 .cenimg {
     display: block;
     margin-left: auto;

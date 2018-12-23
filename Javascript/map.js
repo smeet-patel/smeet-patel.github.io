@@ -133,16 +133,23 @@ function setMarkers(map) {
                     document.getElementById("melBlog").style.display = "block";
                     document.getElementById("singBlog").style.display = "none";
                     document.getElementById("baliBlog").style.display = "none";
+                    document.getElementById("udaiBlog").style.display = "none";
                 } else if ((locations[i][4] == 'ubud')) {
                     document.getElementById("melBlog").style.display = "none";
                     document.getElementById("singBlog").style.display = "none";
                     document.getElementById("baliBlog").style.display = "block";
+                    document.getElementById("udaiBlog").style.display = "none";
+                } else if ((locations[i][4] == 'sing')) {
+                    document.getElementById("melBlog").style.display = "none";
+                    document.getElementById("singBlog").style.display = "block";
+                    document.getElementById("baliBlog").style.display = "none";
+                    document.getElementById("udaiBlog").style.display = "none";
+                } else if ((locations[i][4] == 'udai')) {
+                    document.getElementById("melBlog").style.display = "none";
+                    document.getElementById("singBlog").style.display = "none";
+                    document.getElementById("baliBlog").style.display = "none";
+                    document.getElementById("udaiBlog").style.display = "block";
                 }
-             else if ((locations[i][4] == 'sing')) {
-                document.getElementById("melBlog").style.display = "none";
-                document.getElementById("singBlog").style.display = "block";
-                document.getElementById("baliBlog").style.display = "none";
-            }
             }
         })(marker, i));
     }
