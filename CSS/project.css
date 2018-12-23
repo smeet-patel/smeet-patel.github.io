@@ -50,21 +50,22 @@ p,
 
 #butproto:link,
 #butproto:visited {
-    background-color: #0F78C3;
+    background-color: white;
     border-radius: 15px;
-    color: #F0EF99;
+    color: #0F78C3;
     padding: 14px 25px;
     width: 50%;
     text-align: center;
     text-decoration: none;
     margin: auto;
     display: block;
+    border: 2px solid #0F78C3;
 }
 
 
 #butproto:hover,
 #butproto:active {
-    background-color: rgba(15, 120, 195, 0.7);
+    background-color: rgba(15, 120, 195, 0.2);
 }
 
 /* =============== NAV BAR CODE ===============*/
