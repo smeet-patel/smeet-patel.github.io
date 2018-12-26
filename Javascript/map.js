@@ -74,7 +74,7 @@ function initMap() {
 
 
 var locations = [
-    ['Wellington (New Zealand)', -41.2924322, 174.7788891, 5, 'wel'],
+    ['Dunedin (New Zealand)', -45.8739282, 170.503488, 5, 'dun'],
     ['Singapore', 1.2756818, 103.8546165, 4, 'sing'],
     ['Udaipur (India)', 24.5787228, 73.6862551, 3, 'udai'],
     ['Melbourne (Australia)', -37.8142176, 144.9631608, 2, 'mel'],
@@ -134,21 +134,32 @@ function setMarkers(map) {
                     document.getElementById("singBlog").style.display = "none";
                     document.getElementById("baliBlog").style.display = "none";
                     document.getElementById("udaiBlog").style.display = "none";
+                    document.getElementById("dunBlog").style.display = "none";
                 } else if ((locations[i][4] == 'ubud')) {
                     document.getElementById("melBlog").style.display = "none";
                     document.getElementById("singBlog").style.display = "none";
                     document.getElementById("baliBlog").style.display = "block";
                     document.getElementById("udaiBlog").style.display = "none";
+                    document.getElementById("dunBlog").style.display = "none";
                 } else if ((locations[i][4] == 'sing')) {
                     document.getElementById("melBlog").style.display = "none";
                     document.getElementById("singBlog").style.display = "block";
                     document.getElementById("baliBlog").style.display = "none";
                     document.getElementById("udaiBlog").style.display = "none";
+                    document.getElementById("dunBlog").style.display = "none";
                 } else if ((locations[i][4] == 'udai')) {
                     document.getElementById("melBlog").style.display = "none";
                     document.getElementById("singBlog").style.display = "none";
                     document.getElementById("baliBlog").style.display = "none";
                     document.getElementById("udaiBlog").style.display = "block";
+                    document.getElementById("dunBlog").style.display = "none";
+                }
+                else if ((locations[i][4] == 'dun')) {
+                    document.getElementById("melBlog").style.display = "none";
+                    document.getElementById("singBlog").style.display = "none";
+                    document.getElementById("baliBlog").style.display = "none";
+                    document.getElementById("udaiBlog").style.display = "none";
+                    document.getElementById("dunBlog").style.display = "block";
                 }
             }
         })(marker, i));
