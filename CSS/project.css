@@ -15,11 +15,12 @@ body {
 
 /* gray font*/
 p,
-.dark {
+.dark,
+li {
     color: #555;
 }
 
-#clickblog{
+#clickblog {
     text-align: center;
 }
 
