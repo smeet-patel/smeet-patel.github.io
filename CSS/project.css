@@ -63,10 +63,28 @@ li {
     border: 2px solid #0F78C3;
 }
 
-
 #butproto:hover,
 #butproto:active {
     background-color: rgba(15, 120, 195, 0.2);
+}
+
+#gitbutton:link,
+#gitbutton:visited {
+    background-color: white;
+    border-radius: 15px;
+    color: #333333;
+    padding: 14px 25px;
+    width: 50%;
+    text-align: center;
+    text-decoration: none;
+    margin: auto;
+    display: block;
+    border: 2px solid #333333;
+}
+
+#gitbutton:hover,
+#gitbutton:active {
+    background-color: rgba(51, 51, 51, 0.2);
 }
 
 /* =============== NAV BAR CODE ===============*/
