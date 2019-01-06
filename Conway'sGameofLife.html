@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Conway’s Game Of Life | Project</title>
+    <!-- Stylesheets ------------------------------>
+    <link rel="stylesheet" type="text/css" href="CSS/project.css">
+    <!-- My my mini icon ------------------------------>
+    <link rel="icon" href="spMini.png">
+    <!-- Make the scale of screen to 1 to device ------------------------------>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<script type="text/javascript" src="Javascript/Smeetjavascript.js"></script>
+
+<body>
+    <!-- nav bar ------------------------------>
+    <div class="nav1" id="mynav1">
+        <a href="index.html" class="active"><img src="spw1.png" height="40"></a>
+        <!-- <a href="mycon.html">CONTACT</a> -->
+        <a href="myblog.html">BLOG</a>
+        <a href="mywork.html">MY WORK</a>
+        <a href="aboutme.html">ABOUT ME</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="menubutton" onclick="myFunction()">&#9776;</a>
+    </div>
+    <br>
+    <!-- banner  ------------------------------>
+    <img src="projects/Conway's Game of Life/Conway's Game of Life banner.png" alt="Bike" class="cenBanner">
+    <img src="projects/Conway's Game of Life/Conway's Game of Life square banner.png" alt="Bike" class="cenBannersquare">
+    <div class="sticky">
+        <nav class="shift">
+            <ul>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#design">Code Design</a></li>
+                <li><a href="#implymentation">IMPLEMENTATION</a></li>
+                <li><a href="#refection">Refection</a></li>
+            </ul>
+        </nav>
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
+    </div>
+    <span id="overview"></span>
+    <br>
+    <div class="centerWrap">
+        <!-- project link button -->
+        <a id="gitbutton" href="https://github.com/smeet-patel/Conways-Game-Of-Life-Project" target="_blank"><i class="fa">&#xf09b;</i>
+            Open Project on GitHub (Source Code)</a>
+        <p>Our task was to, as a group, design an OOP based on Conway’s Game of Life, incorporating the knowledge we
+            had gathered in SWEN501 and utilising JavaFX. In summary, this meant that we needed to create a GUI that a
+            user could interact with and build the functionality around this to enable them to do so.</p>
+        <p>Briefly, Conway’s Game of Life works by having an infinite 2D grid of cells, each of which is either ‘alive’
+            or ‘dead’. These cells are displayed on the screen, and how they are generated and destroyed over time
+            creates various patterns which appear on the screen. The ‘rules’ of the game are as follows:</p>
+        <li>If the cell is alive in this generation, and it has two or three alive neighbours (in all eight
+            directions), then it should stay alive in the next generation.</li>
+        <li>If the cell is dead in this generation, and it has three alive neighbours (in all eight directions), then
+            it should become alive in the next generation.</li>
+        <li>Otherwise, the cell should be dead in the next generation.</li>
+        <span id="design"></span>
+        <h3>Team members:</h3>
+        <p>Fiona, Sarah, Caitlin, Carlos and Smeet (Myself)</p>
+        <h1 class="w">Code Design</h1>
+        <p>Our first step was to individually research the background of Conway’s Game of Life, and making notes about
+            features that we felt were important. Following this, we then came back together to share our ideas and
+            thoughts. This led to drafting an outline for how we thought the basic structure of our programme should
+            look (see Fig.1). </p>
+        <div class="hoverOverImage">
+            <img src="projects/Conway's Game of Life/fig1cgol.PNG" class="hoverOverImage-layer_bottom" id="conner_round"
+                style="width:100%">
+            <div class="hoverOverImage-layer_top">
+                <div class="hoverOverImage-text">Figure 1: Initial class outline draft</div>
+            </div>
+        </div>
+        <p>The above image shows the basic first steps we took together as part of our design process. In the
+            beginning, our initial plan was to separate the programme into three classes, which included:</p>
+        <ol>
+            <li>User Interface</li>
+            <ul>
+                <li>This was intended to hold the main method, as well as any relevant buttons, sliders, animation
+                    requirements, event handlers and initialising the scene being used to display these items.</li>
+            </ul>
+            <li>World (Rules)</li>
+            <ul>
+                <li>- This was intended to hold our cells, grid shape, and any methods and/or the ‘rules’ we wrote into
+                    our programme.</li>
+            </ul>
+            <li>Cells</li>
+            <ul>
+                <li>Our initial thought process was that this class would primarily hold state, location, size, and
+                    getters and setters for the ‘alive’ and ‘dead’ cells within our grid.</li>
+                <li>We thought this may possibly extend the pre-designed Rectangle class available in Java. </li>
+                <li>It is important to note that initially, our thought was that we would store these cells in a 2D
+                    array within our project. However, as we looked further into the task and its requirements, we
+                    realised that a HashMap would be a better alternative. This was largely due to the requirement of
+                    an ‘infinite 2D grid of cells’ within the game, which is very difficult to achieve through the use
+                    of an array, as they require a defined number of data entries. A LinkedList or HashMap, on the
+                    other hand, would give us the capability to better hold very large - in this case infinite -
+                    amounts of data as required in this programme. This is also discussed in further detail later in
+                    this report.</li>
+            </ul>
+        </ol>
+        <h3>Class and Sequence diagram</h3>
+        <div class="hoverOverImage">
+            <img src="projects/Conway's Game of Life/fig2cgol.PNG" class="hoverOverImage-layer_bottom" id="conner_round"
+                style="width:100%">
+            <div class="hoverOverImage-layer_top">
+                <div class="hoverOverImage-text">Figure 2: Class diagram detailing fields and methods.</div>
+            </div>
+        </div>
+        <p>We felt that a Class Diagram was relevant to our project as it really helped us to think about how we needed
+            to structure our classes so that they could interact with each other effectively, and would make it much
+            easier down the line for those coding to see and understand these relationships. Furthermore, if any
+            changes were required later on in the project, we realised that having a detailed and effective Class
+            Diagram would undoubtedly help those performing maintenance on the programme to have a clearer idea of its
+            intended structure and where any issues may have arisen from. </p>
+        <div class="hoverOverImage">
+            <img src="projects/Conway's Game of Life/fig3cgol.PNG" class="hoverOverImage-layer_bottom" id="conner_round"
+                style="width:100%">
+            <div class="hoverOverImage-layer_top">
+                <div class="hoverOverImage-text">Figure 3: Sequence diagram showing an overview of the game, with
+                    iteration.</div>
+            </div>
+        </div>
+        <!-- <p>Figure 3: Sequence diagram showing an overview of the game, with iteration.</p> -->
+        <div class="hoverOverImage">
+            <img src="projects/Conway's Game of Life/fig4cgol.PNG" class="hoverOverImage-layer_bottom" id="conner_round"
+                style="width:100%">
+            <div class="hoverOverImage-layer_top">
+                <div class="hoverOverImage-text">Figure 4: Sequence diagram showing the creation of a square on the
+                    pane, without iteration.</div>
+            </div>
+        </div>
+        <p>Sequence diagrams also proved to be a great resource for being able to demonstrate and understand our
+            <span id="implymentation"></span>
+            programme. This helped us to understand how ‘flow’ of the processes within our code would work, identify
+            and eliminate unnecessary links between our classes, and to see which responsibilities belonged to each of
+            our classes and how messages were communicated between these.</p>
+        <h1 class="w">Implementation</h1>
+        <h2>Day 1</h2>
+        <p>The implementation of our project went very smoothly as we ensured we were organised and focussed on the
+            tasks we needed to achieve from the very beginning. Our first sprint, to achieve by the end of the day on
+            Monday, was to produce a minimum viable product - version one of the game - with a basic user interface and
+            a grid of cells. As mentioned previously, we began this process by individually researching the background
+            of Conway’s Game of Life, and made notes about features that we felt were important. We then came back
+            together to share our ideas and thoughts as a group, and created an outline of the basic structure of our
+            programme.</p>
+        <p>After creating the initial design and roughly outlining our Class and Sequence diagrams, we began coding. We
+            started with the more basic aspects of the programme, specifically the user interface and key buttons that
+            we would need to get our programme to work. We also managed to begin on some of the logic for the
+            functionality of the programme on our first day. This created a great base for us to work off leading in to
+            day two of the project.</p>
+        <h2>Day 2</h2>
+        <p>From here, it was much easier to anticipate what we could realistically achieve each day, based on the pace
+            we had set on Monday. We set ourselves a goal to achieve the creation of ‘alive’ and ‘dead’ cells by
+            Tuesday lunchtime, as well as adding functionality to our UI buttons. Our third sprint, completed by
+            Tuesday afternoon, was to have the logic of our cell generation completed.</p>
+        <p>The primary coding technique we used in these first two days was <b>Mob Programming</b>. At a very high
+            level, Mob Programming meant that while only one person would be coding at a time and making commits from
+            their computer, each member of the team would be present and working on the project at the same time, from
+            this central computer, which we had projected onto a larger television screen. This was a great opportunity
+            for our team to collaborate, continuously review our code, develop our communication skills, and for us all
+            to be involved in the coding of our programme. It enabled us to make decisions quickly and troubleshoot any
+            issues very early on in our process. While a majority of our commits to GitLab come from Fiona’s computer,
+            each team member was able to contribute to the code, largely thanks to the use of this technique. </p>
+        <div class="hoverOverImage">
+            <img src="projects/Conway's Game of Life/cgolTesting.png" class="hoverOverImage-layer_bottom" id="conner_round"
+                style="width:100%">
+            <div class="hoverOverImage-layer_top">
+                <div class="hoverOverImage-text">Commenting out different lines of code to try and identify the problem
+                    when drawing a Glider.</div>
+            </div>
+        </div>
+        <p>As we went along, we were also very careful to ensure we kept a record of what we had achieved that day, and
+            created a draft report and presentation as we went. This ensured not only that our information would be as
+            accurate as possible, but also that we were not put under time pressure at the end of the week and could
+            instead focus on improving and modifying our code.</p>
+        <h2>Day 3</h2>
+        <P>The focus of day three of the project - our final sprint - was to further refine our code and eliminate any
+            bugs we came across (detailed further in Part Two of this report). We also used this time to further
+            develop the content for our presentation and to practise this together as a team, as well as refine our
+            drafted diagrams. At this stage in the project, we found that Peer Programming was a very useful tool. The
+            use of this technique, which consisted of two to three people working together on a piece of code from one
+            laptop, was incredibly helpful as it allowed us to share coding and report writing responsibilities amongst
+            the team. This increased our productivity immensely. As with Mob Programming, it again allowed us to
+            collaborate and troubleshoot successfully. We were careful to ensure that all team members not working
+            directly on the code were aware of and understood what had been completed afterwards.</P>
+        <span id="refection"></span>
+        <h2>Last Day</h2>
+        <p>Our final day was largely spent editing and refining our code, report and presentation together as a group,
+            as well as presenting our thus-far-completed programme to the cohort.</p>
+        <h1 class="w">Refection </h1>
+        <p>We are very happy with the final outcome of our project and feel that we successfully managed to incorporate
+            into it each of the key aspects of Conway’s original Game of Life, as well as add additional features and
+            aesthetics to enhance our users’ experience. </p>
+        <p>Our team functioned and collaborated very well as a group, providing support and assistance to each other
+            when needed. We all felt very motivated to achieve a great end result, which we believe is clear in the way
+            everybody got involved and took responsibility for their part of the project, as well as in our final
+            output. </p>
+        <p>This project proved to be a great opportunity for us to learn about each other’s strengths and weaknesses,
+            to familiarise ourselves with various programming techniques, tools, and design and documentation
+            processes, as well as to work on our communication and teamwork skills, all of which will undoubtedly prove
+            invaluable in the future.</p>
+        <hr><br>
+        <!-- project link button -->
+        <a id="gitbutton" href="https://github.com/smeet-patel/Conways-Game-Of-Life-Project" target="_blank"><i class="fa">&#xf09b;</i>
+            Open Project on GitHub (Source Code)</a>
+    </div>
+    <br>
+    <!-- footer ------------------------------>
+    <footer class="footer">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" />
+        <div class="container text-center">
+            <a href="https://www.linkedin.com/in/smeet-patel-/"><i class="fa fa-linkedin-square"></i></a>
+            <a href="https://github.com/smeet-patel"><i class="fa fa-github"></i></a>
+            <a href="mailto:smeetprpatel@gmail.com?Subject=Mail%20from%20Website" target="_top"><i class="fa fa-envelope"></i></a>
+            <a href="https://goo.gl/maps/fReyXVpdCDB2"><i class="fa fa-map-marker"></i></a>
+        </div>
+    </footer>
+</body>
