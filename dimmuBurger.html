@@ -240,9 +240,42 @@
         <p style="text-align:center;" id="dev"><i>The first customised burger ordering form design.</i></p>
         <h2>Second Week (Monday)</h2>
         <p></p>
-
-
-
+        <h1 class="w">Reflection</h1>
+        <h3 style="color: orange">What We Changed From Our Original Plan </h3>
+        <ul>
+            <li>Ordering multiple burgers within a single order.
+                <ul>
+                    <li>We initially planned for an order to be able to contain multiple different burgers within it.
+                        However, as
+                        we approached the end of the project and this feature had not been implemented, a decision was
+                        made to
+                        leave this option out.</li>
+                </ul>
+            </li>
+            <li>The customer gets an estimated time until order ready.<ul>
+                    <li>Once the customer had placed an order, there was going to be a feature on the final page (that
+                        displayed their order number and order state) that gave an estimated time until their order was
+                        complete. This
+                        would have been based on how many burgers were in the queue in front of theirs. This feature
+                        was not
+                        implemented due to time constraints.</li>
+                </ul>
+            </li>
+            <li>Customer orders not pulling stock levels from the kitchen (can order out of stock ingredients)</li>
+            <ul>
+                <li>○ The web application was meant to make a stock level request from the database before it loaded
+                    the webpage, and only display the ingredients that were currently in stock. This would be to
+                    prevent from ordering ingredients that were currently unavailable. Unfortunately, the team lost
+                    sight of this requirement while working on the application, and when we realised it was missing, we
+                    did not have enough time left to implement it.</li>
+            </ul>
+            <li>Originally, the webpage also talked to jdbc class</li>
+            <ul>○ When we initially designed the application structure, it was envisioned that the webpage would also
+                be talking to the jdbc class, and the jdbc class would be the only class talking to the database. As
+                the project progressed, we realised that our web application worked better if it was talking directly
+                to the database. This still left the database as the only link between the front- and back-end
+                applications, which was desired.</ul>
+        </ul>
 
 
     </div>
