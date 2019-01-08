@@ -6,7 +6,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131912613-1"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
+        window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
@@ -55,30 +55,35 @@
     </div>
     <div class="centerWrap">
         <h1 class="w">Overview</h1>
-        <p>The task was to build a <b>web application</b> which enables Customers to order customised burger and
-            separate <b>java
-                application</b> that displays the order to kitchen production line and reorder ingredients. </p>
+        <!-- <p>The task was to build a <b>web application</b> which enables Customers to order customised burger and
+            with a separate <b>java
+                application</b> that displays the order to the kitchen production line and also allows the aimin staff
+            to reorder ingredients. </p> -->
         <a id="butproto" href="https://dimmuburgers.herokuapp.com/" target="_blank">View Dimmu Burger Web Application</a>
         <h2>Project Summary </h2>
         <p>This project is an application development for a (fictitious) burger restaurant in Wellington which aims to
-            allow customers to create a custom burger in a user-friendly manner. We will be implementing a database to
+            allow customers to create a custom burger in a user-friendly manner. We have implemented a database to
             store the orders, burger ingredients, and a list of customers connected with the production line
-            application at Dimmu Burger location. The completion of this project would benefit Dimmu Burger and its
-            users because of a user-friendly interface that allows customer to order, and hence improve the number of
-            customer orders and customer experience.</p>
+            application using Java which the staff at Dimmu Burger will use. The completion of this project would
+            benefit Dimmu Burger and its
+            users because of a user-friendly interface that allows customers to order burgers.
+            <!-- and hence improve the number of customer orders and customer experience. -->
+        </p>
         <h2>Project Team: </h2>
         <ul class="dark">
-            <li><b>Smeet (Myself):</b> Lead Web Developer (Produced exciting the web application, created content,
-                set-up the SQL databases for website & research)</li>
+            <li><b>Smeet (Myself):</b> I was the Lead Web Developer (Produced exciting the web application, created
+                content,
+                set-up the SQL databases for website and Production line app, research about the intergation
+                technology)</li>
             <li><b>Fiona: </b>Lead Java Developer (Assisted and help other members and looked over the production line
                 Java Application)</li>
-            <li><b>Kelly: </b>Implementation Officer (implemented the Heroku hosting and help debug, test and style the
-                web & java application)</li>
+            <li><b>Kelly: </b>Implementation Officer (implemented the Heroku database to bothe the applications and
+                hosted set up hosting on heroku as well, also help debug web application and style the
+                web application)</li>
             <li><b>Sinny: </b>Content Manager (produce some content & gathered icons and helped in the production line
                 application.</li>
             <li id="planning"><b>Heba: </b> Java GUI Developer (produced the production line login GUI and learning
-                basics. <u>Away
-                    for 2 days.</u></li>
+                basics. (Away for 2 days.)</li>
         </ul>
         <h1 class="w">Planning</h1>
         <h2>Project Deliverables</h2>
@@ -93,9 +98,9 @@
         <h2>App Stakeholders </h2>
         <ul class="dark">
             <li><b>Customers</b> order burgers by selecting ingredients on the web application.</li>
-            <li><b>Admin / senior member of kitchen</b> can Check ingredient stock levels and Order new ingredients as
+            <li><b>Admin / senior member of kitchen</b> can check ingredient stock levels and order new ingredients as
                 needed.</li>
-            <li><b>Kitchen staff</b> will receive new orders and Change status of orders (received, in progress,
+            <li><b>Kitchen staff</b> will receive new orders and change status of orders (received, in progress,
                 complete). </li>
         </ul>
         <h2>General Diagram / Brainstorm </h2>
@@ -104,10 +109,9 @@
                 information flow. The right
                 diagram shows our idea of how the two application will communicate with each server.</i></p>
         <h2>Plan Design and Initial Reseach Process </h2>
-        <p>Our first step was to individually research the background on a burger ordering system and make a note of
+        <p>Our first step was to individually research on exisitng burger ordering system and make a note of
             the feature which we thought were important. Following this, we then came back together to share our ideas
-            and thoughts. This led to drafting an outline of the general structure of the applications and integration
-            with the server. </p>
+            and thoughts. This led to drafting an outline of the general structure of the applications. </p>
         <div class="centerWrap">
             <!--Centering everything in the div-->
             <!--enable for the flex tiles row and col--->
@@ -222,7 +226,8 @@
                 staff will log in to order.</i></p>
         <h1 class="w">Development</h1>
         <p>My previous experience in web development meant that I was responsible for producing the web application. I
-            also have experience in SQL and data structure, so I played a role in designing the table and making the
+            also have experience in SQL and data structure, so I played a role in designing the datatable and making
+            the
             PHP function with the databases. </p>
         <h2>Monday and Tuesday (5th & 6th) November</h2>
         <ul class="dark">
@@ -248,7 +253,74 @@
         <iframe src="dimmuBurger/dimmuOne.jpg" class="cenframe" width="420px" height="700px" frameborder="0"></iframe>
         <p style="text-align:center;" id="dev"><i>The first customised burger ordering form design.</i></p>
         <h2>Second Week (Monday)</h2>
-        <p></p>
+
+        <p>I redesigned the ordering form usability for both touch and computer devices by making both radio buttons
+            and checkboxes larger and changing the input number spinner to a slider which a fixed range. After changing
+            the UI, my task was to develop the javascript to add the price and to display the quality of ingredients.</p>
+        <img src="projects/dimmuBurger/Uxchange.PNG" class="cenimg" style="max-width: 800px">
+        <p style="text-align:center;"><i>The first version of the form, which had functional issues (as well as UX
+                issues) and the final design of
+                the order page, simulated on a tablet screen.</i></p>
+        <h2>Second Week (Tuesday and Wednesday)</h2>
+        <p>For the second day of the week, my task was to finish the javascript and to debug issues with the javascript
+            and to move onto PHP. </p>
+        <p>On Wednesday, Kelly and I worked on transferring web app to Heroku to PDO format and implemented the Ajax
+            live status update for the order. Before everyone arrived on the day, I also got the website landing page
+            done with a customised banner and button which lead to the ordering web-page.</p>
+        <img src="projects/dimmuBurger/landdingpageweb.PNG" class="cenimg" style="max-width: 800px">
+        <p style="text-align:center;"><i>Comparison between the initial wireframe design for the Web app landing page,
+                and the final design.</i></p><br>
+        <h2>Second Week (Last Day)</h2>
+        <p>On the last day, we all prepared for the live demonstration, and by using the application more and more to
+            integrate the kitchen production line Java application and the order web app to Heroku, we found more bugs
+            to fix.</p>
+        <img src="projects/dimmuBurger/ordercompletion.PNG" class="cenimg" style="max-width: 800px">
+        <p style="text-align:center;"><i>The bottom of the orders page, showing the required email address, and the
+                order confirmation page, displaying the order number, order state, and a google map widget of the shop
+                location</i></p><br>
+        <p>For the Java production line application Fiona, Sinny and Heba developed both the stock inventory system, as
+            well as the production line application. </p>
+        <img src="projects/dimmuBurger/landingLoginscreenforJavaApp.PNG" class="cenimg" style="max-width: 800px">
+        <p style="text-align:center;"><i>Java production line application, with a simple entry for the kitchen staff
+                and a login for the admin
+                staff.</i></p><br>
+        <img src="projects/dimmuBurger/kitcheninventory.PNG" class="cenimg" style="max-width: 800px">
+        <p style="text-align:center;"><i>The ingredients ordering dashboard where the admin staff will log in to order.</i></p><br>
+        <img src="projects/dimmuBurger/ordersdimmu.PNG" class="cenimg" style="max-width: 800px">
+        <p style="text-align:center;"><i>The final design for the kitchen screen for the Production Line application,
+                with three orders, waiting.</i></p>
+        <h2>Additional Web features</h2>
+        <img src="projects/dimmuBurger/resonsiveUI.PNG" class="cenimg" style="max-width: 800px">
+        <p style="text-align:center;"><i>Responsive UI for which enable web pages to render for properly on a range of
+                devices and window sizes.</i></p>
+        <img src="projects/dimmuBurger/dynamicpricing.PNG" class="cenimg" style="max-width: 800px">
+        <p style="text-align:center;"><i>Dynamic pricing which allows the operating business to decide on the pricing
+                incentives using JS.</i></p>
+        <h2>Integration </h2>
+        <h3 style="color: orange">Heroku </h3>
+        <p>Heroku is a cloud platform for hosting web applications and databases. We chose to use Heroku because we
+            thought that it would be a good way for everyone to access everything from everywhere. We looked into a few
+            other hosting options at the time such as Google FireBase, with which you can also host web applications
+            for free, but ultimately chose to use Heroku because we also wanted to use a SQL database with a schema.</p>
+        <p>To get started with Heroku we followed the documentation explaining how to host a PHP project with Heroku
+            and provision a Heroku PostGreSQL database to it. It went through installing PHP and a dependency manager
+            for PHP called Composer which allows you to declare PHP libraries you will be using in your project.</p>
+        <h3 style="color: orange">PHP + PDO </h3>
+        <p>In our Heroku web app, we used PDO or PHP Data Objects rather than SQLi to make calls and connect to the
+            database. This came as we soon realised that we were developing with both a MariaDB database and a PostGres
+            Database. Looking at our options, we could have either changed it to PostGres or PDO - which has the
+            benefit of having drivers available for many different SQL databases and also seemed to be better regarding
+            security and the risk of SQL injection as PDO uses prepared statements when connecting to the database.
+            Overall though we would need more time to look into different security risks to say that our website is
+            truly secure.</p>
+        <h3 style="color: orange">AJAX</h3>
+        <p>One challenging thing that we wanted to do was to display when the status of a burger changes from ‘new’ to
+            ‘received’ to ‘in progress’ to ‘complete’ as it was updated by the kitchen staff in the Production Line
+            app. Originally we had the idea that we might be able to ask the database if there had been any changes to
+            the database in a timed interval, say every 3 seconds. AJAX, which is a set of techniques in Javascript,
+            uses HTTP request and allows the web page to be asynchronously updated. To get this set up, we mostly
+            followed this guide https://www.w3schools.com/xml/ajax_intro.asp as AJAX has a set way of doing things such
+            as check the status is 200 (everything O.K.) </p>
         <h1 class="w">Reflection</h1>
         <h3 style="color: orange">What We Changed From Our Original Plan </h3>
         <ul>
@@ -279,14 +351,30 @@
                     did not have enough time left to implement it.</li>
             </ul>
             <li>Originally, the webpage also talked to jdbc class</li>
-            <ul><li>When we initially designed the application structure, it was envisioned that the webpage would also
-                be talking to the jdbc class, and the jdbc class would be the only class talking to the database. As
-                the project progressed, we realised that our web application worked better if it was talking directly
-                to the database. This still left the database as the only link between the front- and back-end
-                applications, which was desired.</li></ul>
+            <ul>
+                <li>When we initially designed the application structure, it was envisioned that the webpage would also
+                    be talking to the jdbc class, and the jdbc class would be the only class talking to the database.
+                    As
+                    the project progressed, we realised that our web application worked better if it was talking
+                    directly
+                    to the database. This still left the database as the only link between the front- and back-end
+                    applications, which was desired.</li>
+            </ul>
         </ul>
-
-
+        <h3 style="color: orange">Conclusion </h3>
+        <p>We are happy with the final outcome of our project and feel that we successfully managed to incorporate the
+            main functionality for the two applications while having a strong emphasis for user experience for the web
+            app. </p>
+        <p>Our team functioned and collaborated very well as a group, providing support and assistance to each other
+            when needed. We all felt very motivated to achieve a great end result, which we believe is clear in the way
+            everybody got involved and took responsibility for their part of the project as we got all the pieces
+            together. We might have underestimated our time frame for some of the feature. As a result, we had some
+            uncomplete task which can be justified for thinking outside of the box and researching new technologies
+            which were not introduced in our program and implementing using Heroku. Also, this was not an actual
+            requirement, but we decided that we also had to develop a mobile-first approach and responsive web design
+            for all devices and made the build based on the usability heuristic. If I was to do a similar project
+            again, I would like to like to Explore Google Firebase to store the inventory information and sales
+            records.</p>
     </div>
 
     <!-- footer ------------------------------>
