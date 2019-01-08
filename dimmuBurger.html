@@ -3,6 +3,15 @@
 
 <head>
     <title>Dimmu Burger | Project</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131912613-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-131912613-1');
+    </script>
     <!-- Stylesheets ------------------------------>
     <link rel="stylesheet" type="text/css" href="CSS/project.css">
     <!-- My my mini icon ------------------------------>
@@ -263,18 +272,18 @@
             </li>
             <li>Customer orders not pulling stock levels from the kitchen (can order out of stock ingredients)</li>
             <ul>
-                <li>○ The web application was meant to make a stock level request from the database before it loaded
+                <li>The web application was meant to make a stock level request from the database before it loaded
                     the webpage, and only display the ingredients that were currently in stock. This would be to
                     prevent from ordering ingredients that were currently unavailable. Unfortunately, the team lost
                     sight of this requirement while working on the application, and when we realised it was missing, we
                     did not have enough time left to implement it.</li>
             </ul>
             <li>Originally, the webpage also talked to jdbc class</li>
-            <ul>○ When we initially designed the application structure, it was envisioned that the webpage would also
+            <ul><li>When we initially designed the application structure, it was envisioned that the webpage would also
                 be talking to the jdbc class, and the jdbc class would be the only class talking to the database. As
                 the project progressed, we realised that our web application worked better if it was talking directly
                 to the database. This still left the database as the only link between the front- and back-end
-                applications, which was desired.</ul>
+                applications, which was desired.</li></ul>
         </ul>
 
 
