@@ -559,3 +559,19 @@ video {
     -moz-border-radius: 10px;
     border-radius: 10px;
 }
+
+@media screen and (max-width: 600px) {
+    #map {
+        min-height: 300px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+    }
+}
+
+/* .map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+} */
