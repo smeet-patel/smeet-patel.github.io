@@ -1,63 +1,132 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Sports World</title>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131912613-1"></script>
-		<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
 
-		gtag('config', 'UA-131912613-1');
-		</script>
-		<!-- Stylesheets ------------------------------>
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<link rel="stylesheet" type="text/css" href="style1.css">
-		<!-- My my mini icon ------------------------------>
-		<link rel="icon" href="spMini.png">
-		<!-- Make the scale of screen to 1 to device ------------------------------>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<script type="text/javascript" src="Javascript/Smeetjavascript.js"></script>
-	</head>
-	<body>
-		<!-- nav bar ------------------------------>
-		<div class="nav1" id="mynav1">
-			<a href="index.html" class="active" title="Home"><img src="spw1.png" height="40"></a>
-			<!-- <a href="mycon.html">CONTACT</a> -->
-			<a href="myblog.html">BLOG</a>
-			<a href="mywork.html">MY WORK</a>
-			<a href="aboutme.html">ABOUT ME</a>
-			<a href="javascript:void(0);" style="font-size:15px;" class="menubutton" onclick="myFunction()">&#9776;</a>
-		</div>
-		<!-- banner  ------------------------------>
-		<div class="bannerContainer">
-			<img src="sw1.jpeg" alt="Sports world website" style="width:100%" class="responsiveImg">
-			<div class="bottom-left">
-				<div class="add1">
-					<!--<p><b>SPORTS WORLD</b></p>-->
-				</div>
-			</div>
-		</div>
-		<!-- Contact me buttons ------------------------------>
-		<div class="centerWrap">
-			<blockquote class="trello-board-compact">
-  <a href="{https://trello.com/b/27axXBtY}">Trello Board</a>
-</blockquote>
-<script src="https://p.trellocdn.com/embed.min.js"></script>
-		</div>
-		<br>
-		</div>
-		<a href="#"><i id="fixedbacktotop" class="fa fa-chevron-circle-up" style="font-size:48px;color:#0F78C3"></i></a>
-		<!-- footer ------------------------------>
-		<footer class="footer">
-			<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
-			<div class="container text-center">
-				<a href="https://www.linkedin.com/in/smeet-patel-/"><i class="fa fa-linkedin-square"></i></a>
-				<a href="https://github.com/smeet-patel"><i class="fa fa-github"></i></a>
-				<a href="mailto:smeetprpatel@gmail.com?Subject=Mail%20from%20Website" target="_top"><i class="fa fa-envelope"></i></a>
-				<a href="https://goo.gl/maps/fReyXVpdCDB2"><i class="fa fa-map-marker"></i></a>
-			</div>
-		</footer>
-	</body>
+<head>
+    <title>Happy Building | Project</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131912613-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-131912613-1');
+    </script>
+    <!-- Stylesheets ------------------------------>
+    <link rel="stylesheet" type="text/css" href="CSS/project.css">
+    <!-- My my mini icon ------------------------------>
+    <link rel="icon" href="spMini.png">
+    <!-- Make the scale of screen to 1 to device ------------------------------>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<script type="text/javascript" src="Javascript/Smeetjavascript.js"></script>
+
+<body>
+    <!-- nav bar ------------------------------>
+    <div class="nav1" id="mynav1">
+        <a href="index.html" class="active" title="Home"><img src="spw1.png" height="40"></a>
+        <!-- <a href="mycon.html">CONTACT</a> -->
+        <a href="myblog.html">BLOG</a>
+        <a href="mywork.html">MY WORK</a>
+        <a href="aboutme.html">ABOUT ME</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="menubutton" onclick="myFunction()">&#9776;</a>
+    </div>
+    <br>
+    <!-- banner  ------------------------------>
+    <img src="projects/myBank/myBankBanner.PNG" alt="dimmu Burger" class="cenBanner">
+    <img src="projects/myBank/my bank banner.png" alt="dimmu Burger" class="cenBannersquare">
+    <div class="sticky">
+        <nav class="shift">
+            <ul>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#python">Python</a></li>
+                <li><a href="#cprograming">C#</a></li>
+                <li><a href="#summary">Summary</a></li>
+            </ul>
+        </nav>
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
+    </div>
+    <span id="overview"></span>
+    <br>
+    <div class="centerWrap">
+        <!-- project link button -->
+        <a id="gitbutton" href="https://github.com/smeet-patel/banking-systerm-in-2-programing-langages-" target="_blank"><i
+                class="fa">&#xf09b;</i>
+            Open Project on GitHub (Source Code)</a>
+        <p>I wanted to explore python and C# programming languages by creating two almost identical console base
+            banking system applications with simple features such as adding a new customer and account, deleting a
+            records, modifying details, and allowing bankers to look the records of all customers. this allowed for transferring
+            payments from one customer to another, clearing and accepting a cheque. Also, for python, I made a
+            real-time currency conversion using APIs. </p>
+        <p>The design of the application was designed to allow the user to input a number which corresponds to a
+            certain user for example 1 for ‘new customer’, 2 for ‘existing customer’ and 3 for ‘banker’. Depending on
+            the selected input, the user would get other options to complete the task as mentioned above. If the user
+            was a new user, they are required to input their personal details to create their bank account. </p>
+        <p>The reason I choose Python and C# programming languages was due to the popularity of the languages in the IT
+            <span id="python"></span>
+            industry and this is evident in a recent article related to GitHub usage (they are 3rd and 6th most used
+            languages respectively). </p>
+        <h1 class="w">Python</h1>
+        <li>Overall, python was more natural to learn and was unique as it was different to JAVA or C# due to had no curly
+            braces, therefore correctly indenting the code was crucial. </li>
+        <li>Python was easier to implement the APIs in JSON format and works better with most data types. </li>
+        <li>I learnt that I had to cast numeric values input into int or float when storing or programming mathematical
+            operation. For example, 2+1 would be 21 instead of equalling to 3 while using string type. </li>
+        <li>One of the challenges in python was trying to access a global variable inside a function. To solve the
+            issues, I had to insert ‘global’ before the variable inside the function. </li>
+        <li>For my data structure, I used a nested dictionary because it enabled me to set up a data structure like a
+            HashMap in Java and therefore it allowed me to store the customer number ID as key and the other
+            information for that customer number along aside it. </li>
+        <li>I was also able to implement a real time currency conversion calculator from one currency to another by
+            accessing a JSON file online. This was possibly my biggest challenge in python as I had to convert
+            retrieving the exchange rate and program the operations. </li>
+        <!-- <li>One of the programming elements I did compromise in this python version having a type check had implemented
+            in my C# version. </li>
+        <li>Also, for the currency converter, it would have been ideal to store a list of all the currency code so the
+            if the user enters an invalid, they asked to enter a valid currency code to proceed. </li> -->
+        <li>Overall, I really enjoyed programming in python and in the future, I would use Python for machine learning
+            <span id="cprograming"></span>
+            projects and participate in Kaggle competitions.
+            <!-- where python is used because it is more powerful when constructing mathematical models and creating algorithms. -->
+        </li>
+        <h1 class="w">C#</h1>
+        <li>After developing the application in Python, I chose to build the application in C# which was similar to
+            Java because it is an object-oriented language and Microsoft response to Java.</li>
+        <!-- <li>C# has some subtle differences such as the main method, declaring constants, foreach statements, print
+            statements for system.out. Print vs. Console.Writeline for C#.</li> -->
+        <li>In C# I also wrote multiple classes in a single file, which proved adventurous while creating the custom
+            class object for the list because I was able to match the variable better the switching file while
+            programming. </li>
+        <li>The basic principles for C# were similar to JAVA. Writing and reading from the console was the more
+            preferred way for me (rather than having a scanner), but I struggled using a list in C# because of the
+            custom class object and writing the setter and getter because it was different to JAVA.</li>
+        <span id="summary"></span>
+        <li>One extension for python was the exchange rate converter, which I did not implement because of time
+            constraints and complexity. </li>
+        <h1 class="w">Summary </h1>
+        <p>Overall, Python was more straightforward to learn and is instantaneous for development. While in
+            C#, the program needs a main method to run the application. Most of my skills in Java were transferable to
+            C# because they are both object orientated programming languages. For more extensive and visual application
+            - C# would be more preferred, while, for data or mathematical application python would be more suitable.</p>
+        <hr>
+        <a id="gitbutton" href="https://github.com/smeet-patel/banking-systerm-in-2-programing-langages-" target="_blank"><i
+                class="fa">&#xf09b;</i>
+            Open Project on GitHub (Source Code)</a>
+    </div>
+    <br>
+    <!-- footer ------------------------------>
+    <footer class="footer">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" />
+        <div class="container text-center">
+            <a href="https://www.linkedin.com/in/smeet-patel-/"><i class="fa fa-linkedin-square"></i></a>
+            <a href="https://github.com/smeet-patel"><i class="fa fa-github"></i></a>
+            <a href="mailto:smeetprpatel@gmail.com?Subject=Mail%20from%20Website" target="_top"><i class="fa fa-envelope"></i></a>
+            <a href="https://goo.gl/maps/fReyXVpdCDB2"><i class="fa fa-map-marker"></i></a>
+        </div>
+    </footer>
+</body>
+
 </html>
