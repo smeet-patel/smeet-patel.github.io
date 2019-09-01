@@ -78,7 +78,13 @@ var locations = [
     ['Singapore', 1.2756818, 103.8546165, 4, 'sing'],
     ['Udaipur (India)', 24.5787228, 73.6862551, 3, 'udai'],
     ['Melbourne (Australia)', -37.8142176, 144.9631608, 2, 'mel'],
-    ['Ubud (Indonesia)', -8.5080922, 115.2639576, 1, 'ubud']
+    ['Ubud (Indonesia)', -8.5080922, 115.2639576, 1, 'ubud'],
+    ['Macau', 22.1987, 113.5439, 6, 'macau'],
+    ['Hong Kong', 22.3193, 114.1694, 7, 'hk'],
+    ['Shenzhen', 22.5431, 114.0579, 8, 'shen'],
+    ['Bangkok (Thailand)', 13.7563, 100.5018, 9, 'bangkok'],
+    ['Penang (Malaysia)', 5.4356, 100.3091, 10, 'penang'],
+    ['Kuala Lumpur (Malaysia)', 3.1390, 101.6869, 11, 'kl']
 ];
 // Shapes define the clickable region of the icon. The type defines an HTML
 // <area> element 'poly' which traces out a polygon as a series of X,Y points.
